@@ -1,9 +1,15 @@
 theme: jekyll-theme-minimal
-title: ADA Template Website
-description: A template website for ADA
+title: Wikispeedia World Cup
+description: A vibrant competition between different wikispeedia hubs.
 show_downloads: True
 navigation:
-  - title: Home
-    url: /
-  - title: Example
-    url: example
+   - title: Home
+     url: /
+   - title: Scouting Report
+     url: scouting-report
+   - title: Tournament Structure
+     url: tournament-structure
+   - title: Betting Floor
+     url: betting-floor
+   - title: Competition Progress
+     url: competition-progress
