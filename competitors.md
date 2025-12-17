@@ -21,6 +21,7 @@ Wikispeedia contains thousands of Wikipedia articles that appear in real player 
 Not all of them are suitable competitors.
 
 <!-- Placeholder: Overview of number of articles appearing in the dataset -->
+{% include_relative _plots/articles_overview.html %}
 
 <!-- Placeholder: Show some articles that appears the less and why we need to select becausse some are irrelevant -->
 
@@ -41,6 +42,7 @@ We did a selection based on an external dataset : Wipedia Pageviews. The selecti
 We crossed all the most visted pages and took the 64 more consistent pages during these 8 years, so we got the "base" of Wikipedia for our hubs. But the fame of a page does not imply that it will be a good hub. Let's have a look to our contenders selected !
 
 <!-- Placeholder: Figure showing the reduction from all pages to qualified hubs -->
+{% include_relative _plots/hub_reduction.html %}
 
 ---
 
