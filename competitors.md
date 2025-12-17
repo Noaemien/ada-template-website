@@ -24,6 +24,19 @@ Not all of them are suitable competitors.
 
 <!-- Placeholder: Show some articles that appears the less and why we need to select becausse some are irrelevant -->
 
+| Page | Popularity |
+| ---- | ---------- |
+|                          Comet_White-Ortiz-Bolelli |0.00163|  
+|  Six-party_talks_concerning_North_Korea's_nucle... |0.00131|
+|                                       Harrier_Hawk |0.00120|
+|                                Long-billed_Vulture |0.00098|
+|                                      PSR_B1620-26c |0.00076|
+|                                 HIV_AIDS_in_Africa |0.00065|
+|                       GNU_Linux_naming_controversy |0.00043|
+|                                  LANSA_Cuzco_Crash |0.00032|
+|                                         Newshounds |0.00021|
+|                                     Arp2_3_complex |0.00000|
+
 We did a selection based on an external dataset : Wipedia Pageviews. The selection is based on the most visited Wikipedia page from 2016 to 2024 to avoid any contender that would have been popular just because of a peak at a moment.
 We crossed all the most visted pages and took the 64 more consistent pages during these 8 years, so we got the "base" of Wikipedia for our hubs. But the fame of a page does not imply that it will be a good hub. Let's have a look to our contenders selected !
 
@@ -40,16 +53,25 @@ The selected hubs are not all alike. They naturally fall into different archetyp
 - **Historical events**, some moments that changed the world   
 - **Famous persons**, like scientists or presidents
 
-Our contenders come from many different types opf categories, but at the end, they will all be judged with the same recipe : who is the best hub.
+Our contenders come from many different types of categories, but at the end, they will all be judged with the same recipe : who is the best hub.
 
 <!-- Placeholder: Bar chart or table showing distribution of selected hubs -->
+{% include_relative _plots/top64_hubs.html %}
+
 <!-- Placeholder:Analysis in genenral of the selection -->
 ---
 
 ## Some surprising qualifications
 
-Some of the hubs qualified are obvious selection like one of the biggest, the United States page, but as we can see below, we have some ssurprising qualifications too.
+Some of the hubs qualified are obvious selection like one of the biggest, the United States page, but as we can see below, we have some surprising qualifications too.
 <!-- Placeholder: Show the most unexpected qualifications) -->
+
+| Contestant            | Popularity  | Volatility  |
+| ----------            | ----------  | ----------  |
+| Arnold Schwartznegger | 0.67        | 0.0022      |
+| Periodic Table        | 0.58        | 0.0043      |
+| Adolph Hitler         | 0.90        | 0.0008      |
+| Tupak Shakur          | 0.52        | 0.0032      |
 
 At this stage, we intentionally avoid ranking competitors or revealing any performance metrics.  
 The goal is to understand **who is in the tournament**, not **who is expected to win**.
