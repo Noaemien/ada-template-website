@@ -5,11 +5,17 @@ show_downloads: True
 navigation:
    - title: Home
      url: /
-   - title: Scouting Report
-     url: scouting-report
-   - title: Tournament Structure
-     url: tournament-structure
+   - title: The Competitors
+     url: competitors
    - title: Betting Floor
      url: betting-floor
-   - title: Competition Progress
-     url: competition-progress
+   - title: Structure of the Tournament
+     url: tournament-structure
+   - title: Start of the World Cup of Hubs
+     url: start-tournament
+   - title: The Deadly Knockouts
+     url: knockouts
+   - title: The Grand Final
+     url: final
+   - title: Analysis and Insights
+     url: analysis

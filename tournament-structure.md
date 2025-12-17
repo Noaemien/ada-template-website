@@ -1,19 +1,119 @@
 ---
 layout: default
-title: Tournament Structure
+title: Structure of the Tournament
 ---
 
-# The Tournament Structure
+# Structure of the Tournament
 
-The road to the trophy is long and perilous. Here is how the 6,000 articles will be whittled down to one champion:
+Before the first match is played, the rules of the competition must be clear.
 
-- The Qualifiers: From a pool of 6,000 articles, only the Top 64 will survive the initial data cut.
-- The Group Stage: 8 Groups of 8 Articles.
-- The #1 ranked page in each group qualifies directly for the Round of 16.
-- The Repechage (The Second Chance): The pages ranked 2nd, 3rd, and 4th in their groups aren't out yet! They will face off in a cutthroat mini-league where only the winner grabs a ticket to the Round of 16.
-- The Knockouts: No more second chances. Head-to-head duels.
-- Round of 16 Quarter-Finals Semi-Finals The Grand Final.
+This page explains how the World Cup of Hubs is organized and how competitors are evaluated in the tournament.
 
-{% include_relative _plots/competition_flow.html %}
+---
 
-[Back to Home](/)
+## Tournament Overview
+
+The competition design is inspired from a football world cup with some add-ons to take out progressively contenders until we get a final vagiation champion.
+
+It works in several stages, each increasing in selectivity:
+
+- **Group Stage**  
+    We start the competion by having 8 groups of 8 hubs. 
+    To ensure a fair group stage, groups are **not formed at random**.
+
+    Before the draw, all qualified hubs are ranked according to their **pre-tournament odds**. Based on this ranking, hubs are divided into **seeding bins** (sometimes called *pots*), a system commonly used in real-world tournaments such as the Football World Cup or in Tennis.
+
+    Each bin contains hubs of similar expected strength.
+
+    The group draw then proceeds as follows:
+    Each group contains one hub from each *pot*. This guarantees that no group contains more than one major favorite and provide a balanced mix of favorites, challengers, and outsiders in every groups.
+
+    This mechanism prevents early concentration of strong contenders in the same group.
+    The **1st** of each group will go through and qualify for the **Round of 16**.
+
+- **Repechage (Second Chance)**  
+    Hubs ranked **2nd, 3rd, and 4th** in their groups are not eliminated yet.  
+    They enter a *loser bracket* and are given a last chance. Only **8 hubs will survive** from this mini-league and earns their ticket to the **Round of 16**.
+
+- **Knockout Phase**  
+    From this point, there are **no second chances**.  
+    Qualified hubs face each other in **head-to-head duels**, where only the winner advances.
+
+- **Final**  
+    After the Round of 16, Quarter-Finals, and Semi-Finals, two hubs remain.  
+    One of them is crowned the **World Cup of Wikipedia Hubs champion**.
+
+<!-- Placeholder: Diagram illustrating the full tournament flow -->
+
+---
+
+## How Hubs Are Scored During the Tournament
+
+Hubs do not compete based on a single statistic.
+
+Instead, each competitor is evaluated using a **composite score** that captures three main aspects of navigation quality. 
+At this stage of the tournament, the precise ranking formula is intentionally left open. What matters here is **what is being measured**, not yet **how everything is combined**.
+
+---
+
+### The Three Dimensions of Performance
+
+- **Popularity**  
+  Popularity captures how often a page is used by players during Wikispeedia games.  
+  It reflects whether a hub is frequently encountered, rediscovered after backtracking, or consistently involved in successful navigation paths.
+
+- **Versatility**  
+  Versatility measures how a hub connects different areas of knowledge.  
+  Pages that bridge multiple topics or appear in diverse navigation contexts are considered more versatile.
+
+- **Effectiveness**  
+  Effectiveness reflects whether visiting a page helps players make progress toward their target or slows them down.  
+
+Each of these metrics highlights a different aspect on how we could define a hub beinf a **good hub**. 
+
+### From Metrics to a Match Score
+
+To decide match outcomes, the three dimensions are combined into a **single score** for each hub. This score acts as the referee’s decision: it determines which hub performs better in a given competitive context.
+
+So do not forget ! 
+The odds were based only on the famousness of the pages accross the years, but the referee does not care if the hub is famous, he wants the most powerful hub for his Wikispeedia games.
+
+We might see some suprising favourites upsets and maybe some crazy underdog stories !
+---
+
+## Local Comparison and Normalization
+
+To preserve suspense, scores are **never compared globally across all competitors**.
+
+Instead:
+
+- Scores are compared **locally**, within a group or a match
+- Raw values are **normalized relative to direct opponents**
+- Only relative rankings are shown during each stage with the percentage of how the hub dominated
+
+This is a deliberate choice to not spoil the competition and ensures that advancement depends on performance **against comparable opponents**, not absolute scale.
+
+The full definition of the scoring system and its components will be revealed later, once the tournament has concluded and you will be able to follow a more in-depth analysis of the evaluations of the hubs.
+
+---
+
+## The Group Draw
+
+The 64 qualified hubs are divided into **8 groups of 8 competitors**.
+Let's have a look at our groups : 
+
+<!-- Placeholder: Table or visual showing the 8 groups and their hubs in order with their seed -->
+
+# The Start of the Tournament
+
+The rules are set.  
+The odds are published.  
+The draw has been made.
+
+From now on, reputation no longer matters.  
+Only performance within the group does.
+
+It is time to kick off the **World Cup of Hubs**.
+
+**The World Cup of Hubs kicks off !**  
+[Start of the Tournament](ada-template-website/start-tournament/)

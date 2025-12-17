@@ -17,4 +17,25 @@ We are proud to announce the inaugural WORLD CUP OF HUBS. We are turning the Wik
 
 We have analyzed player behavior and the intrinsic graph structure of the network to determine which pages are the undisputed heavyweights of the internet.
 
-[Explore the Scouting Report](/ada-template-website/scouting-report/)
+## How the World Cup Works
+
+We turn Wikipedia navigation into a football-style tournament.
+
+From thousands of articles appearing in Wikispeedia games, only the strongest hubs qualify. These contenders then compete through different stages:
+
+- **Qualifiers** to select the competitors  
+- A **group stage**, where hubs face diverse opponents  
+- A **knockout phase**, with no second chances  
+- A **final**, crowning the ultimate navigation champion  
+
+To decide who advances, each hub is evaluated using three main metrics :
+
+- **Efficiency** : does visiting this page help players reach their target faster, or does it slow them down?  
+- **Versatility** : how many different topics and destinations does this page connect?  
+- **Popularity** : how often is this page actually used in successful navigation paths?  
+
+We aggregate them to then have a final scoree. Hubs will be compared locally at each stage of the tournament to keep fair matchups and especially to keep the suspense, it would be too easy to reveal the winner already !
+
+For now, the game is on. Let's go meet our competitors !
+[The Competitors][Explore the Participants](/ada-template-website/competitors/)
+
