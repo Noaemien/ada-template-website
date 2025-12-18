@@ -23,7 +23,14 @@ This is a complex metric constructed using meticulously balanced weights for nor
 
 Each component is normalized independently prior to aggregation, to ensure that no single metric dominates due to scale effects.
 
-<!-- Placeholder: Table showing raw hub scores and global ranking -->
+<div style="width:100%; overflow-x:auto;">
+  <iframe
+    src="{{ '/_plots/analysis_plots_assets/plots/raw_scores_table.html' | relative_url }}"
+    style="width:100%; height:720px; border:0;"
+    loading="lazy">
+  </iframe>
+</div>
+
 
 Inspection of the raw scores reveal a few consistent patterns:
 - Highly visited or globally famous pages do not necessarily achieve high composite scores.
@@ -44,7 +51,13 @@ The metric integrates multiple behavioral signals:
 - Successful continuation after backtracking.
 - Penalties associated with dead-end behavior due to the lack of encouragement to continue.
 
-<!-- Placeholder: Popularity distribution plot -->
+<div style="width:100%;">
+  <iframe
+    src="{{ '/_plots/analysis_plots/popularity_distribution.html' | relative_url }}"
+    style="width:100%; height:520px; border:0;"
+    loading="lazy">
+  </iframe>
+</div>
 
 A logarithmic transformation is applied to raw counts to reduce the influence of extreme outliers.
 
@@ -61,7 +74,21 @@ To get this score a hierarchial expansion from Wikipedia category annotations wa
 - Categories are expanded through their parent articles to capture the hierarchical relations
 - Categories of linked neighbors are utilized to evaluate its reach beyond the itself.
 
-<!-- Placeholder: Versatility plot or category-coverage visualization -->
+<div style="width:100%;">
+  <iframe
+    src="{{ '/_plots/analysis_plots/versatility_plot.html' | relative_url }}"
+    style="width:100%; height:520px; border:0;"
+    loading="lazy">
+  </iframe>
+</div>
+
+<div style="width:100%; margin-top:14px;">
+  <iframe
+    src="{{ '/_plots/analysis_plots/versatility_coverage.html' | relative_url }}"
+    style="width:100%; height:560px; border:0;"
+    loading="lazy">
+  </iframe>
+</div>
 
 Therefore versitality captures not only the topic diversity but goes further into linked categories to better identify topical connections.
 
@@ -78,7 +105,13 @@ It combines three behavioral indicators:
 - The frequency of immediate backtracking following the hub.
 - The average game duration associated with its usage.
 
-<!-- Placeholder: Effectiveness vs success rate visualization -->
+<div style="width:100%;">
+  <iframe
+    src="{{ '/_plots/analysis_plots/efficiency_vs_success.html' | relative_url }}"
+    style="width:100%; height:520px; border:0;"
+    loading="lazy">
+  </iframe>
+</div>
 
 Metrics where lower values indicate better performance (backtracking frequency and duration) are inverted and normalized prior to aggregation.
 

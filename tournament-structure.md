@@ -44,6 +44,7 @@ It works in several stages, each increasing in selectivity:
     One of them is crowned the **World Cup of Wikipedia Hubs champion**.
 
 <!-- Placeholder: Diagram illustrating the full tournament flow -->
+![Tournament design](images/competition_structure.png)
 
 ---
 
@@ -95,14 +96,55 @@ This is a deliberate choice to not spoil the competition and ensures that advanc
 
 The full definition of the scoring system and its components will be revealed later, once the tournament has concluded and you will be able to follow a more in-depth analysis of the evaluations of the hubs.
 
+
 ---
 
 ## The Group Draw
 
 The 64 qualified hubs are divided into **8 groups of 8 competitors**.
+
+---
+
+### Why Seeding Matters
+
+Seeding determines how hubs are distributed into groups and, later, into the knockout bracket.
+
+High-seeded hubs are deliberately separated to avoid early clashes, while lower-seeded hubs face more challenging paths from the outset. As a result, seeding quietly shapes the tournament long before the first match is played.
+
+At this stage, we intentionally avoid ranking competitors by performance or revealing match outcomes.  
+The goal is to understand **how expectations are formed**, not **how the tournament ends**.
+
+Some placements in the seeding hierarchy are immediately intuitive.  
+Pages such as **United States**, **India**, **United Kingdom**, or **China** occupy the very top seeds, reflecting both their popularity and especially being a big countries.
+
+However, we can notice some **unexpected seeding** with articles showing up as higher or lower than we expected.
+
+### Unexpectedly High Seeds
+
+Several pages achieve **top seeding positions** despite not being obvious favorites based purely on fame or geopolitical weight.
+
+- **Arnold Schwarzenegger** is seeded surprisingly high, outperforming many countries and historical events.
+- **Singapore** secures a higher seed than several much larger countries.
+- **New York City** and **Google** rank among the top seeds, reflecting their role as universal reference points rather than topic-specific endpoints.
+
+### Unexpectedly Lower Seeds
+
+Conversely, some globally famous pages appear lower in the seeding than intuition might suggest.
+
+- **The Beatles** and **Tupac Shakur**, while extremely popular, display higher volatility: their relevance depends strongly on cultural or musical contexts.
+- **Periodic Table**, despite its centrality in science and the usefulness of the page, it is amongst the last seeds
+- **Harry Potter** and **FIFA World Cup** rank lower than many political or geographic pages, showing that pop culture still lays behind geopolitical topics.
+
+These pages are far from weak competitors but they are **context-dependent**, which affects their seeding.
+
+<!-- Placeholder: Visualization of volatility distribution or seeding pots -->
+
 Let's have a look at our groups : 
 
 <!-- Placeholder: Table or visual showing the 8 groups and their hubs in order with their seed -->
+## Group Draw
+
+![Group Stage Draw](images/group_stage.png)
 
 # The Start of the Tournament
 
