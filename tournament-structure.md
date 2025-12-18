@@ -44,6 +44,7 @@ It works in several stages, each increasing in selectivity:
     One of them is crowned the **World Cup of Wikipedia Hubs champion**.
 
 <!-- Placeholder: Diagram illustrating the full tournament flow -->
+![Tournament design](images/competition_structure.png)
 
 ---
 
@@ -103,6 +104,30 @@ The 64 qualified hubs are divided into **8 groups of 8 competitors**.
 Let's have a look at our groups : 
 
 <!-- Placeholder: Table or visual showing the 8 groups and their hubs in order with their seed -->
+## Group Draw
+
+| Group 1 | Group 2 | Group 3 | Group 4 |
+|--------|--------|--------|--------|
+| United States | India | United Kingdom | China |
+| Arnold Schwarzenegger | Joseph Stalin | Germany | Singapore |
+| Barack Obama | France | John F. Kennedy | Russia |
+| Tupac Shakur | Philippines | Muhammad Ali | Vietnam War |
+| The Beatles | Abraham Lincoln | Soviet Union | Netherlands |
+| Winston Churchill | Israel | Paul McCartney | George Washington |
+| Ottoman Empire | Harry Potter | Jimmy Carter | Stephen Hawking |
+| FIFA World Cup | Bill Gates | Liverpool F.C. | Chernobyl disaster |
+
+| Group 5 | Group 6 | Group 7 | Group 8 |
+|--------|--------|--------|--------|
+| Google | Adolf Hitler | World War I | World War II |
+| Michael Jordan | New York City | Canada | Australia |
+| Elvis Presley | Wikipedia | South Africa | Mahatma Gandhi |
+| William Shakespeare | Pakistan | Albert Einstein | Japan |
+| American Civil War | Manchester United F.C. | California | London |
+| Ronald Reagan | Alexander the Great | Franklin D. Roosevelt | Periodic table |
+| Turkey | Chelsea F.C. | Taiwan | Jake Gyllenhaal |
+| Richard Nixon | Bruce Lee | Bill Clinton | George W. Bush |
+
 
 # The Start of the Tournament
 
