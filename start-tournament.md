@@ -9,6 +9,7 @@ During the group stage, hubs are evaluated against the other members of their gr
 Below are the final standings of the group stage.
 
 <!-- Placeholder: Group-stage result tables (normalized scores only) -->
+![Group Stage Results](images/group_stage_results.png)
 
 Analyze the results with some suprise and depending on the seeding.
 
@@ -23,7 +24,7 @@ Hubs ranked **2nd, 3rd, and 4th** in their respective groups enter the **Repecha
 By the end of the repechage, the remaining contenders will go through to go into the **Round of 16**.
 
 <!-- Placeholder: Repechage results table or diagram -->
-
+![Repechage](images/repechage.png)
 We hope your contender went through and managed to qualify for the knockout stages !
 
 ---
