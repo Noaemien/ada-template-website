@@ -13,46 +13,77 @@ This page lifts the curtain on the **raw scores**, the **individual metrics**, a
 
 ## Raw Hub Scores
 
-We begin by looking at the **final composite scores** computed for each hub.
+First the **final composite score** assigned to each hub.
 
-These scores combine popularity, versatility, and effectiveness into a single measure of navigation quality, using the best-performing aggregation strategy identified during experimentation.
+This is a complex metric constructed using meticulously balanced weights for normalized features to best capture all aspects affecting the navigation quality:
+- **Popularity**, reflecting how often a hub is encountered and reused by players.
+- **Versatility**, measuring semantic breadth and category coverage.
+- **Efficiency**, capturing if a hub supports or slows down successful navigation.
+- **Global visibility**, derived from external Wikipedia pageview statistics.
+
+Each component is normalized independently prior to aggregation, to ensure that no single metric dominates due to scale effects.
 
 <!-- Placeholder: Table showing raw hub scores and global ranking -->
 
-Several patterns immediately emerge:
+Inspection of the raw scores reveal a few consistent patterns:
+- Highly visited or globally famous pages do not necessarily achieve high composite scores.
+- Strong overall performance typically arises from balanced domination across multiple metrics, rather than extreme values in a single dimension.
+- Several hubs with moderate popularity achieve high rankings due to strong efficiency or versatility.
+
+So to better understand how that is let's go deeper into each metric.
 
 ---
 
-## Metric 1 : Popularity
+## Metric 1: Popularity
 
-Popularity measures how often a hub is encountered and reused by players.
+This is the where we separate the cool kids from the others. Popularity quantifies player interaction frequency of a given hub during navigation.
 
-Looking at raw popularity scores reveals:...
+The metric integrates multiple behavioral signals:
+- Total appearances in both finished and unfinished games.
+- Repeated visits within the same game session indicating a feeling of safe haven.
+- Successful continuation after backtracking.
+- Penalties associated with dead-end behavior due to the lack of encouragement to continue.
 
 <!-- Placeholder: Popularity distribution plot -->
 
+A logarithmic transformation is applied to raw counts to reduce the influence of extreme outliers.
+
+As a result, the popularity score reflects if a page is attractive enough to make the player keep going.
+
 ---
 
-## Metric 2 : Versatility
+## Metric 2: Versatility
 
-Versatility captures how broadly a hub connects different areas of Wikipedia.
+Versatility measures the conceptial connectivity of a hub by quantifying how many distinct topical regions it connects.
 
-Highly versatile hubs:...
+To get this score a hierarchial expansion from Wikipedia category annotations was utilized:
+- Each article contributes its own categories.
+- Categories are expanded through their parent articles to capture the hierarchical relations
+- Categories of linked neighbors are utilized to evaluate its reach beyond the itself.
 
 <!-- Placeholder: Versatility plot or category-coverage visualization -->
 
+Therefore versitality captures not only the topic diversity but goes further into linked categories to better identify topical connections.
+
+Hubs with high versatility tend to link otherwise distant thematic regions, offering multiple plausible navigation paths even when their raw popularity is limited. Meaning this is specially important for players who want to take shortcuts.
+
 ---
 
-## Metric 3 : Effectiveness
+## Metric 3: Efficiency
 
-Effectiveness measures whether a hub actually helps players reach their targets.
+The last but not least the efficiency. Here the a hubs participation to successful and timely navigation is materialized.
 
-It reflects:
-- success vs failure rates,
-- dead-end behavior,
-- and navigation speed.
+It combines three behavioral indicators:
+- The success rate of games in which the hub appears.
+- The frequency of immediate backtracking following the hub.
+- The average game duration associated with its usage.
 
 <!-- Placeholder: Effectiveness vs success rate visualization -->
+
+Metrics where lower values indicate better performance (backtracking frequency and duration) are inverted and normalized prior to aggregation.
+
+So using this we are able to separate the hubs that appear out of pure attraction due to popularity from the ones that help with mindfull pathfinding aimed at reaching the final goal.
+
 
 ---
 
