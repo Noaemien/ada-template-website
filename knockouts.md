@@ -15,7 +15,10 @@ In each match, hubs are evaluated head-to-head using the tournament scoring syst
 
 <!-- Placeholder: Table or bracket showing Round of 16 matchups and winners -->
 
+
 Analysis of the results.
+
+![Quarter finals](images/quarter_final.png)
 
 ---
 
@@ -32,6 +35,8 @@ Differences between hubs are often subtle, and small advantages can decide entir
 
 Analysis of the results.
 
+![Semi finals](images/semifinal.png)
+
 ---
 
 ## Semi-Finals : The Final Four
@@ -45,8 +50,9 @@ With the final in sight, the pressure reaches its peak.
 
 <!-- Placeholder: Semi-Final matchups and results -->
 
-
 Analysis of the results.
+
+![Final Bracket](images/knockout_final.png)
 
 ---
 
