@@ -37,5 +37,5 @@ To decide who advances, each hub is evaluated using three main metrics :
 We aggregate them to then have a final scoree. Hubs will be compared locally at each stage of the tournament to keep fair matchups and especially to keep the suspense, it would be too easy to reveal the winner already !
 
 For now, the game is on. Let's go meet our competitors !
-[The Competitors][Explore the Participants](/ada-template-website/competitors/)
+[The Competitors][Explore the Participants](/ada-template-website/competitors)
 

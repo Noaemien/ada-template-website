@@ -77,4 +77,4 @@ Each followed a different path through the tournament, overcame different challe
 One last match stands between them and the trophy.
 
 **Next: the Grand Final.**  
-[Enter the Grand Final](ada-template-website/final/)
+[Enter the Grand Final](ada-template-website/final)

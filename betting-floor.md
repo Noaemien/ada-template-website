@@ -19,19 +19,19 @@ Another decides whether to trust them.
 ## The Bookmakers : Setting the Odds
 
 To do so, the bookmakers scrapped the whole wikipedia website to extract a graph architecture from it. (they unfortunately do not have access at the Wikispeedia players game data so they cannot predict perfectly the outcome of the competition)
-To estimate the importance of a node to build a graph we usually use centrality measure. Bookmakers here mainly relied on Betweenness and Katz centrality measures.
+To estimate the importance of a node to build a graph we usually use centrality measure. Bookmakers here mainly relied on **Betweenness** and **Katz** centrality measures.
 Here are the 64 most important nodes using those measures.hidden at this stage of the competition.
 
-From those two mesures we can extract 2 visual graphs of the wikipedia architecture
+From those two mesures we can extract visual graphs of the wikipedia network architecture based on beetweenness centrality measure over links : 
 
-<!-- Placeholder: maybe how we turn pageviews into odds -->
+![Graph of the wikipedia network based on beetweenness centrality measure](images/graph_wikipedia.png)
 
 ## The Odds Board
 
 Based on those two metrics, Bookmakers will now give an odd for every Node so player can put their money on their favourite choice depending on their predictions. These odds reflect **expectations**, not outcomes.
 
 ### Strategy: Selective Normalization
-To account for a bookmaker's margin and filter out the "long tail" of 4,000 competitors, we calculate the total market weight based only on the **Top 64** performers. 
+To account for a bookmaker's margin and filter out the "long tail" of approximately 4,000 competitors, we calculate the total market weight based only on the **Top 64** performers. 
 
 This creates in the same time an **overround** for the bookmakers and simplify the calculations: since we divide individual scores by a smaller total sum, the implied probabilities will sum to more than 100% across the entire dataset, effectively lowering the odds.
 
@@ -39,8 +39,8 @@ This creates in the same time an **overround** for the bookmakers and simplify t
 1. **Composite Score ($S_i$):**
    $$S_i = \frac{C_{B,i} + C_{K,i}}{2}$$
 
-2. **Top-100 Reference Sum ($\Sigma_{top}$):**
-   $$\Sigma_{top} = \sum_{j=1}^{100} S_j$$
+2. **Top-64 Reference Sum ($\Sigma_{top}$):**
+   $$\Sigma_{top} = \sum_{j=1}^{64} S_j$$
 
 3. **Modified Probability ($P'_i$):**
    $$P'_i = \frac{S_i}{\Sigma_{top}}$$
@@ -80,15 +80,15 @@ To convert these scores into betting odds for a multi-competitor field, we use a
    $$W_i = e^{\beta \cdot \lambda_i}$$
    *(Where $\beta$ is a scaling factor. A higher $\beta$ makes the "favorites" stronger).*
 
-3. **Normalization (Top-100 Margin):**
-   We calculate the total potential based on the top 100 competitors to create the bookmaker's margin:
-   $$\Omega_{top} = \sum_{j=1}^{100} W_j$$
+3. **Normalization (Top-64 Margin):**
+   We calculate the total potential based on the top 64 competitors to create the bookmaker's margin:
+   $$\Omega_{top} = \sum_{j=1}^{64} W_j$$
 
 4. **Implied Probability and Odds:**
    $$P_i = \frac{W_i}{\Omega_{top}} \quad \text{and} \quad \text{Odds}_i = \frac{1}{P_i}$$
 
 ### Problem : 
-The bookmaker doesnt know the insights of the real competition so he cannot know how to adjust beta. That is why he employs a "Market Anchor" strategy. Rather than guessing the internal skill distribution (β), the model is back-calculated by forcing the top-ranked favorite’s winning odds to exactly 8.00. By then dividing all odds by eight to create a "Top 8" market, the favorite is naturally positioned at 1.00 (100% implied probability). This approach effectively standardizes the risk profile: it treats the structural leader as a certainty for the Top 8 while allowing the exponential scaling to dictate the decreasing probabilities for the rest of the field in a mathematically consistent way.
+The bookmaker doesnt know the insights of the real competition so he cannot know how to adjust β. That is why he employs a "Market Anchor" strategy. Rather than guessing the internal skill distribution (β), the model is back-calculated by forcing the top-ranked favorite’s winning odds to exactly 8.00. By then dividing all odds by eight to create a "Top 8" market, the favorite is naturally positioned at 1.00 (100% implied probability). This approach effectively standardizes the risk profile: it treats the structural leader as a certainty for the Top 8 while allowing the exponential scaling to dictate the decreasing probabilities for the rest of the field in a mathematically consistent way.
 In addition, trying to guess the top8 is deffinitely funnier for the gamblers !
 
 # Betting area
@@ -213,7 +213,7 @@ container.appendChild(table);
 function limitSelection(checkbox) {
   const checked = document.querySelectorAll('#optionsContainer input:checked');
   if (checked.length > 8) {
-    alert("Vous ne pouvez sélectionner que 8 articles au total.");
+    alert("You can only select 8 contenders for the top 8 !");
     checkbox.checked = false;
   }
 }
@@ -222,7 +222,7 @@ function limitSelection(checkbox) {
 function saveSelection() {
   const checkedInputs = Array.from(document.querySelectorAll('#optionsContainer input:checked'));
   if (checkedInputs.length !== 8) {
-    alert("Vous devez sélectionner exactement 8 articles.");
+    alert("You must select 8 contenders for the top 8 !");
     return;
   }
 
@@ -271,7 +271,7 @@ ul { margin-top: 10px; }
 
 ### Now, let's explore some betting strategies
 
-We always assume you have 80 \$ and bet 10 \$ on each of 8 articles.
+We always assume you have 80 $ and bet 10 $ on each of 8 articles.
 
 #### Strategy 1 – Follow the bookmakers
 
@@ -283,8 +283,8 @@ If someone simply follows the odds given by the bookmakers on the real competiti
 
 Total return:
 
-- `10 × (1.00 + 3.36 + 6.07) = 10 × 10.43 = 104.3 \$`
-- Profit: `104.3 \$ − 80 \$ = 24.3 \$`
+- `10 × (1.00 + 3.36 + 6.07) = 10 × 10.43 = 104.3 $`
+- Profit: `104.3 $ − 80 $ = 24.3 $`
 
 #### Strategy 2 – Perfectly predict the Top 8 hubs
 
@@ -294,8 +294,8 @@ If someone predicted the 8 best hubs (including one article not even offered by 
 
 The return from the 7 bettable winners would be:
 
-- `10 × (1.00 + 8.05 + 10.63 + 3.36 + 11.53 + 8.35 + 5.75) = 486.7 \$`
-- Profit: `486.7 \$ − 80 \$ = 406.7 \$`
+- `10 × (1.00 + 8.05 + 10.63 + 3.36 + 11.53 + 8.35 + 5.75) = 486.7 $`
+- Profit: `486.7 $ − 80 $ = 406.7 $`
 
 Note to mention that Adolf Hitler was not even proposed by the bookmakers, showing that the bookmakers could'nt predict the competition well and that the graph analysis alone is not sufficient enough to estimate wikispeedia's players behaviors.
 Underdogs that were not proposed to bet on is part of the game (that's one way how bookmakers can make money)
@@ -337,7 +337,7 @@ Among these, the actual winners are:
 
 Total return:
 
-- `10 × (1.00 + 7.32 + 6.07 + 3.36 + 8.35) = 261 \$`
+- `10 × (1.00 + 7.32 + 6.07 + 3.36 + 8.35) = 261 $`
 - Profit: `261 $ − 80 $ = 181 $`
 
 This strategy clearly outperforms the one directly following the bookmakers’ odds. It shows that using **page popularity** can be more reliable for predicting players’ behavior than relying only on the **graph architecture**.
@@ -401,4 +401,4 @@ As the tournament goes on, we will track how your pick perform and see whether h
 With bets placed and expectations set, it is time to know the rules of the competition and the strucutre of the competion before letting the hubs fight.
 
 **Discover how the World Cup of Hubs is designed.**  
-[Structure of the Tournament](https://noaemien.github.io/ada-template-website/tournament-structure/)
+[Structure of the Tournament](ada-template-website/tournament-structure)

@@ -171,4 +171,4 @@ In the end, the sharks didn’t just predict the winner : they predicted the *ty
 
 **Thank you for following us through our World Cup of Hubs ! We hope you enjoyed it !**
 
-[Back to the menu](ada-template-website/index/)
+[Back to the menu](ada-template-website/index)

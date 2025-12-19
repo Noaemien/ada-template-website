@@ -85,4 +85,4 @@ These questions will be explored in the following sections.
 With the champion crowned, it is time to step back and analyze what truly determined success.
 
 **Dive into the data and understand the results.**  
-[Explore the Analysis](ada-template-website/analysis/)
+[Explore the Analysis](ada-template-website/analysis)
