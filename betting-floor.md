@@ -49,6 +49,7 @@ This creates in the same time an **overround** for the bookmakers and simplify t
    $$O_i = \frac{1}{P'_i}$$
 
 this are the odds measured with this technique :
+
 | Rank | Article           | Odds      |
 |:----:|:-----------------|:---------:|
 | 1    | United States     | 7.11      |
@@ -227,16 +228,45 @@ ul { margin-top: 10px; }
 
 ---
 
-### Now, Lets explore some betting strategies : 
+### Now, let's explore some betting strategies
 
-1) if someone follow the odds given by the bookmakers on the real competition,
-he would win 1* United_states + 3.36* United_kingdom + 6.07* WordWarII = 10*10.43 = 104.3$ (profit = 20.4$)
-2) if someone predicted the 8 best hubs : United_States, Russia, South_Africa, United_Kingdom, Israel, China, Germany he would have made : (1.00 + 8.05 + 10.63 + 3.36 + 11.53 + 8.35 + 5.75)*10$ -80$ = 406.7$.
-Note to mention that Adolf Hitler was not even proposed by the bookmakers, showing that the bookmakers could'nt predict the competition well and that the graph analysis alone is not sufficient enough to estimate wikispeedia's players behaviors.
-Underdogs that were not proposed to bet on is part of the game (that's one way how bookmakers can make money)
-3) select the top 8 most popular pages from those lat 10 years show the same problem : the most popular pages on wikipedia are not at all the same as the ones favorized by the wikipedia link architecture. Player thus have to go up to the 15th most popular page to have 8 contenders:
+We always assume you have 80 $ and bet 10 $ on each of 8 articles.
+
+#### Strategy 1 – Follow the bookmakers
+
+If someone simply follows the odds given by the bookmakers on the real competition, they would win on:
+
+- **United States** (1.00)
+- **United Kingdom** (3.36)
+- **World War II** (6.07)
+
+Total return:
+
+- `10 × (1.00 + 3.36 + 6.07) = 10 × 10.43 = 104.3 $`
+- Profit: `104.3 $ − 80 $ = 24.3 $`
+
+#### Strategy 2 – Perfectly predict the Top 8 hubs
+
+If someone predicted the 8 best hubs (including one article not even offered by the bookmakers):
+
+- Bettable picks from the list:  
+  **United States, Russia, South Africa, United Kingdom, Israel, China, Germany**
+- Plus **Adolf Hitler**, who was **not** proposed by the bookmakers (so no bet could be placed on it)
+
+The return from the 7 bettable winners would be:
+
+- `10 × (1.00 + 8.05 + 10.63 + 3.36 + 11.53 + 8.35 + 5.75) = 486.7 $`
+- Profit: `486.7 $ − 80 $ = 406.7 $`
+
+This highlights how much value there was in “underdogs” and in articles that the bookmaker did not even list.
+
+#### Strategy 3 – Use global popularity
+
+Now consider a different idea: pick the top 8 most popular pages on Wikipedia over the last 10 years.  
+These are **not** the same as the nodes favored by the Wikipedia link architecture, so the overlap with the bookmaker’s list is limited.
+
 | Article            |
-|-------------------|
+|--------------------|
 | United States      |
 | Wikipedia          |
 | India              |
@@ -253,10 +283,26 @@ Underdogs that were not proposed to bet on is part of the game (that's one way h
 | Canada             |
 | Australia          |
 
-the player with this strategy select (from the list proposed by the bookmaker) : United_States, India, World_War_II, United_Kingdom, World_War_I, China, Canada, Australia.
-This gives : United_States: 1.00* 10$, India: 7.32* 10$, World_War_II: 6.07* 10$, United_Kingdom: 3.36* 10$, China: 8.35* 10$ -> totaling 261$ - 80$ = 181$
-This shows that this strategy is thus definitely a better than the one predicted by the bookmakers showing that their strategy based on the graph architecture was not the best to predict players behaviors and capitalizing on page popularity is definitely a more reliable one.
-Since the Wikispeedia database is selected from EVERY players, it would be interesting to organize a second world cup of hubs but this time based on the best players. It would this time be interesting to see if the bookmakers strategy would be the best since we assume those top performer players would rather choose efficent links than links that appeal to their ears.
+From the bookmaker’s offered list, a player using this strategy would select:
+
+- **United States, India, World War II, United Kingdom, World War I, China, Canada, Australia**
+
+Among these, the actual winners are:
+
+- **United States** (1.00)
+- **India** (7.32)
+- **World War II** (6.07)
+- **United Kingdom** (3.36)
+- **China** (8.35)
+
+Total return:
+
+- `10 × (1.00 + 7.32 + 6.07 + 3.36 + 8.35) = 261 $`
+- Profit: `261 $ − 80 $ = 181 $`
+
+This strategy clearly outperforms the one directly following the bookmakers’ odds. It shows that using **page popularity** can be more reliable for predicting players’ behavior than relying only on the **graph architecture**.
+
+Since the Wikispeedia database is built from **all** players, it would be interesting to organize a second “World Cup of Hubs” but this time based only on the **best players**. In that setting, we might expect the bookmakers’ graph-based strategy to perform better, because top players are more likely to choose **efficient links** rather than links that simply sound familiar.
 
 ---
 
@@ -266,7 +312,7 @@ Our group also tried to find their own strategy before looking at this project:
 
 Noa : Spain, Austalia, Portugal, Italy, Earth, London, Islam, Latin 
 
-Tolga : United_states, England, China, World_war_I, Earth, United_kinddom, Europe, Turkey
+Tolga : United_states, England, China, World_war_I, Earth, United_kindgom, Europe, Turkey
 
 Antoine : Oiseau, XXe siècle, langue anglaise, Seconde Guerre mondiale, Organisation des Nations unies, liste des pays par système de gouvernement, animal, classification scientifique
 
@@ -295,6 +341,19 @@ this shows that based on no serious strategy, humans perform pretty badly on thi
 As the tournament goes on, we will track how your pick perform and see whether human intuition can keep up with the data.
 
 ---
+
+<!-- MathJax loader to render LaTeX formulas on this page -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    }
+  };
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 
 ## The Tournament Is About to Begin
 
