@@ -101,7 +101,7 @@ what you know, what your intuition suggest you, and what the odds suggest.
 Will you trust global fame?  
 Or will you go for a promising outsider and go against the bookmakers ?  
 
-<p>Select your own favourite hub 8 articles: (you have 80$ and must bet 10$ on each article you think will be in the top 8 of the world cup of hubs)</p>
+<p>Select your own favourite hub 8 articles: (you have 80\$ and must bet 10\$ on each article you think will be in the top 8 of the world cup of hubs)</p>
 
 <div class="container" id="optionsContainer"></div>
 <button onclick="saveSelection()">Save</button>
@@ -178,33 +178,56 @@ const articles = [
   { name: "Belgium", odd: 11.67 }
 ];
 
-// Generate checkboxes
+// Generate table with checkboxes
 const container = document.getElementById("optionsContainer");
-articles.forEach(article => {
-  const div = document.createElement("div");
-  div.className = "option";
-  div.innerHTML = `
-    <label>
-      <input type="checkbox" value="${article.name}" data-odd="${article.odd}" onclick="limitSelection(this)">
-      ${article.name.replace(/_/g, ' ')} - ${article.odd.toFixed(2)}
-    </label>
-  `;
-  container.appendChild(div);
-});
+const table = document.createElement("table");
+table.className = "options-table";
 
-// Limit to 8 selections
+const thead = document.createElement("thead");
+thead.innerHTML = `
+  <tr>
+    <th>article</th>
+    <th>odd_top8</th>
+  </tr>
+`;
+table.appendChild(thead);
+
+const tbody = document.createElement("tbody");
+articles.forEach(article => {
+  const tr = document.createElement("tr");
+  tr.innerHTML = `
+    <td>
+      <label>
+        <input type="checkbox" value="${article.name}" data-odd="${article.odd}" onclick="limitSelection(this)">
+        ${article.name.replace(/_/g, ' ')}
+      </label>
+    </td>
+    <td>${article.odd.toFixed(2)}</td>
+  `;
+  tbody.appendChild(tr);
+});
+table.appendChild(tbody);
+container.appendChild(table);
+
+// Limit to exactly 8 selections
 function limitSelection(checkbox) {
   const checked = document.querySelectorAll('#optionsContainer input:checked');
   if (checked.length > 8) {
-    alert("You can select up to 8 articles only!");
+    alert("Vous ne pouvez sélectionner que 8 articles au total.");
     checkbox.checked = false;
   }
 }
 
 // Save selections
 function saveSelection() {
-  const selected = Array.from(document.querySelectorAll('#optionsContainer input:checked'))
-                        .map(input => `${input.value.replace(/_/g, ' ')} - ${parseFloat(input.dataset.odd).toFixed(2)}`);
+  const checkedInputs = Array.from(document.querySelectorAll('#optionsContainer input:checked'));
+  if (checkedInputs.length !== 8) {
+    alert("Vous devez sélectionner exactement 8 articles.");
+    return;
+  }
+
+  const selected = checkedInputs
+    .map(input => `${input.value.replace(/_/g, ' ')} - ${parseFloat(input.dataset.odd).toFixed(2)}`);
   const list = document.getElementById("selectionList");
   list.innerHTML = "";
   selected.forEach(item => {
@@ -218,19 +241,37 @@ function saveSelection() {
 </script>
 
 <style>
-.container { display: flex; flex-wrap: wrap; max-width: 800px; }
+.container { max-width: 800px; margin-top: 10px; }
 .option { width: 250px; margin-bottom: 5px; }
+
+.options-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.options-table th,
+.options-table td {
+  padding: 4px 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.options-table th {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+
 button { margin-top: 20px; padding: 8px 20px; font-size: 16px; cursor: pointer; }
 h3 { margin-top: 30px; }
 ul { margin-top: 10px; }
 </style>
 
-
 ---
 
 ### Now, let's explore some betting strategies
 
-We always assume you have 80 $ and bet 10 $ on each of 8 articles.
+We always assume you have 80 \$ and bet 10 \$ on each of 8 articles.
 
 #### Strategy 1 – Follow the bookmakers
 
@@ -242,46 +283,45 @@ If someone simply follows the odds given by the bookmakers on the real competiti
 
 Total return:
 
-- `10 × (1.00 + 3.36 + 6.07) = 10 × 10.43 = 104.3 $`
-- Profit: `104.3 $ − 80 $ = 24.3 $`
+- `10 × (1.00 + 3.36 + 6.07) = 10 × 10.43 = 104.3 \$`
+- Profit: `104.3 \$ − 80 \$ = 24.3 \$`
 
 #### Strategy 2 – Perfectly predict the Top 8 hubs
 
 If someone predicted the 8 best hubs (including one article not even offered by the bookmakers):
-
-- Bettable picks from the list:  
-  **United States, Russia, South Africa, United Kingdom, Israel, China, Germany**
-- Plus **Adolf Hitler**, who was **not** proposed by the bookmakers (so no bet could be placed on it)
+ 
+  **United States, Russia, South Africa, United Kingdom, Israel, China, Germany, Adolf Hitler**
 
 The return from the 7 bettable winners would be:
 
-- `10 × (1.00 + 8.05 + 10.63 + 3.36 + 11.53 + 8.35 + 5.75) = 486.7 $`
-- Profit: `486.7 $ − 80 $ = 406.7 $`
+- `10 × (1.00 + 8.05 + 10.63 + 3.36 + 11.53 + 8.35 + 5.75) = 486.7 \$`
+- Profit: `486.7 \$ − 80 \$ = 406.7 \$`
 
-This highlights how much value there was in “underdogs” and in articles that the bookmaker did not even list.
+Note to mention that Adolf Hitler was not even proposed by the bookmakers, showing that the bookmakers could'nt predict the competition well and that the graph analysis alone is not sufficient enough to estimate wikispeedia's players behaviors.
+Underdogs that were not proposed to bet on is part of the game (that's one way how bookmakers can make money)
 
 #### Strategy 3 – Use global popularity
 
 Now consider a different idea: pick the top 8 most popular pages on Wikipedia over the last 10 years.  
 These are **not** the same as the nodes favored by the Wikipedia link architecture, so the overlap with the bookmaker’s list is limited.
 
-| Article            |
+| Article by popularity on the real world wikipedia           |
 |--------------------|
-| United States      |
-| Wikipedia          |
-| India              |
-| Google             |
-| World War II       |
-| Adolf Hitler       |
-| United Kingdom     |
-| Barack Obama       |
-| World War I        |
-| Michael Jordan     |
-| Winston Churchill  |
-| China              |
-| Elvis Presley      |
-| Canada             |
-| Australia          |
+| 1. United States      |
+| 2. Wikipedia          |
+| 3. India              |
+| 4. Google             |
+| 5. World War II       |
+| 6. Adolf Hitler       |
+| 7. United Kingdom     |
+| 8. Barack Obama       |
+| 9. World War I        |
+| 10. Michael Jordan     |
+| 11. Winston Churchill  |
+| 12. China              |
+| 13E lvis Presley      |
+| 14. Canada             |
+| 15. Australia          |
 
 From the bookmaker’s offered list, a player using this strategy would select:
 
@@ -297,7 +337,7 @@ Among these, the actual winners are:
 
 Total return:
 
-- `10 × (1.00 + 7.32 + 6.07 + 3.36 + 8.35) = 261 $`
+- `10 × (1.00 + 7.32 + 6.07 + 3.36 + 8.35) = 261 \$`
 - Profit: `261 $ − 80 $ = 181 $`
 
 This strategy clearly outperforms the one directly following the bookmakers’ odds. It shows that using **page popularity** can be more reliable for predicting players’ behavior than relying only on the **graph architecture**.
@@ -325,15 +365,15 @@ Julien : États-Unis, XXe siècle, Angleterre, agriculture, Seconde Guerre mondi
 
 
 
-Noa : - -> - 80$ + 0$ = - 80$
+Noa : - -> - 80\$ + 0\$ = - 80\$
 
-Tolga : United_States, China, United_Kingdom -> -80$ + 1* 10$ + 8.35* 10$ + 3.36* 10$ = 47.10$
+Tolga : United_States, China, United_Kingdom -> -80\$ + 1* 10\$ + 8.35* 10\$ + 3.36* 10\$ = 47.10\$
 
-Antoine : - -> - 80$ + 0$ = - 80$
+Antoine : - -> - 80\$ + 0\$ = - 80\$
 
-Max : United_States -> -80$ + 1* 10$ = -70$
+Max : United_States -> -80\$ + 1* 10\$ = -70\$
 
-Julien : United_States, China -> -80$ + 1* 10$ + 8.35* 10$ = 13.5$
+Julien : United_States, China -> -80\$ + 1* 10\$ + 8.35* 10\$ = 13.5\$
 
 this shows that based on no serious strategy, humans perform pretty badly on this type of gamble. Did you do better ? 
 
@@ -347,7 +387,8 @@ As the tournament goes on, we will track how your pick perform and see whether h
   window.MathJax = {
     tex: {
       inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true
     }
   };
 </script>
