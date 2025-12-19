@@ -142,7 +142,64 @@ this shows that based on no serious strategy, humans perform pretty badly on thi
 
 #### Strategy 5 : YOUR BET
 
-bla bla bla 
+Below you can see the 8 contenders you selected on the betting floor and how they compare to the actual final Top 8.
+
+<div id="yourBetSummary"></div>
+
+<script>
+(function () {
+  const winners = [
+    "United_States",
+    "United_Kingdom",
+    "South_Africa",
+    "Germany",
+    "Israel",
+    "Adolf_Hitler",
+    "Russia",
+    "China"
+  ];
+
+  const summaryEl = document.getElementById("yourBetSummary");
+  if (!summaryEl) return;
+
+  let stored = null;
+  try {
+    stored = JSON.parse(localStorage.getItem("wc_hubs_bet") || "null");
+  } catch (e) {
+    stored = null;
+  }
+
+  if (!Array.isArray(stored) || stored.length !== 8) {
+    summaryEl.innerHTML = "<p><em>No saved bet found. Go back to the betting floor, place your 8 bets, then return here.</em></p>";
+    return;
+  }
+
+  const winningPicks = stored.filter(p => winners.includes(p.name));
+  const sumOdds = winningPicks.reduce((sum, p) => {
+    const odd = typeof p.odd === "number" ? p.odd : parseFloat(p.odd);
+    return sum + (isNaN(odd) ? 0 : odd);
+  }, 0);
+
+  const stake = 80;
+  const betPerArticle = 10;
+  const totalReturn = betPerArticle * sumOdds;
+  const profit = totalReturn - stake;
+
+  const listItems = stored.map(p => {
+    const isWinner = winners.includes(p.name);
+    const label = p.name.replace(/_/g, " ");
+    return `<li>${label} — odd_top8: ${p.odd.toFixed(2)} ${isWinner ? "(in final Top 8)" : ""}</li>`;
+  }).join("");
+
+  summaryEl.innerHTML = `
+    <p>Your 8 selected hubs:</p>
+    <ul>${listItems}</ul>
+    <p>Number of your hubs that reached the final Top 8: <strong>${winningPicks.length}</strong></p>
+    <p>Sum of the odds of your hubs that are in the final Top 8: <strong>${sumOdds.toFixed(2)}</strong></p>
+    <p>Since you bet ${betPerArticle} on each hub (total stake ${stake}), your total return would be <strong>${totalReturn.toFixed(2)}</strong> and your profit <strong>${profit.toFixed(2)}</strong>.</p>
+  `;
+})();
+</script>
 
 ---
 

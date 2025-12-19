@@ -236,8 +236,20 @@ function saveSelection() {
     list.appendChild(li);
   });
 
+  // Store raw data (slug + numeric odd) so the final page can reuse it
+  const payload = checkedInputs.map(input => ({
+    name: input.value,
+    odd: parseFloat(input.dataset.odd)
+  }));
+  try {
+    localStorage.setItem('wc_hubs_bet', JSON.stringify(payload));
+  } catch (e) {
+    console.warn('Could not store bet selection in localStorage', e);
+  }
+
   console.log("Selections saved:", selected);
 }
+
 </script>
 
 <style>
@@ -271,7 +283,7 @@ ul { margin-top: 10px; }
 
 ### Now, let's see some betting strategies example
 
-We always assume you have 80 $ and bet 10 $ on each of 8 articles.
+We always assume you have 80 \$ and bet 10 \$ on each of 8 articles.
 
 #### Strategy 1 : Follow the bookmakers
 
