@@ -25,7 +25,7 @@ Each component is normalized independently prior to aggregation, to ensure that 
 
 <div style="width:100%; overflow-x:auto;">
   <iframe
-    src="{{ '/_plots/analysis_plots_assets/plots/raw_scores_table.html' | relative_url }}"
+    src="{{ '/_plots/analysis_plots/raw_scores_table.html' | relative_url }}"
     style="width:100%; height:720px; border:0;"
     loading="lazy">
   </iframe>
