@@ -19,3 +19,5 @@ navigation:
      url: final
    - title: Analysis and Insights
      url: analysis
+include:
+  - _plots
