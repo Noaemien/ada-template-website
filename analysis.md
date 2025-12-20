@@ -51,9 +51,21 @@ The metric integrates multiple behavioral signals:
 - Successful continuation after backtracking.
 - Penalties associated with dead-end behavior due to the lack of encouragement to continue.
 
+Here are the leaders in each category of most appearance, continuation after backtrack and dead end penalties.
+
 <div style="width:100%;">
   <iframe
     src="{{ '/_plots/analysis_plots/popularity_dropdown.html' | relative_url }}"
+    style="width:100%; height:520px; border:0;"
+    loading="lazy">
+  </iframe>
+</div>
+
+These points from each category were combined to create a complex final popularity score. Creating the following distribution:
+
+<div style="width:100%;">
+  <iframe
+    src="{{ '/_plots/analysis_plots/popularity_distribution.html' | relative_url }}"
     style="width:100%; height:520px; border:0;"
     loading="lazy">
   </iframe>
