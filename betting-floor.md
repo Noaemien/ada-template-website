@@ -24,7 +24,7 @@ Here are the 64 most important nodes using those measures.hidden at this stage o
 
 From those two mesures we can extract visual graphs of the wikipedia network architecture based on beetweenness centrality measure over links : 
 
-{% include_relative _plots/bookmakers_plot.html %}
+{% include_relative _plots/centrality_graph.html %}
 
 ## The Odds Board
 
