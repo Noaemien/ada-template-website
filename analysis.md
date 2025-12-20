@@ -53,7 +53,7 @@ The metric integrates multiple behavioral signals:
 
 <div style="width:100%;">
   <iframe
-    src="{{ '/_plots/analysis_plots/popularity_distribution.html' | relative_url }}"
+    src="{{ '/_plots/analysis_plots/popularity_dropdown.html' | relative_url }}"
     style="width:100%; height:520px; border:0;"
     loading="lazy">
   </iframe>
