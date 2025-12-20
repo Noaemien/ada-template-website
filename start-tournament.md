@@ -11,7 +11,6 @@ Below are the final standings of the group stage.
 <!-- Placeholder: Group-stage result tables (normalized scores only) -->
 ![Group Stage Results](images/group_stage_results.png)
 
-Analyze the results with some suprise and depending on the seeding.
 
 ---
 
@@ -62,7 +61,16 @@ The bracket is constructed so that:
 
 It is time ot discover the final table of the tournament !
 
-<!-- Placeholder: Final knockout bracket diagram showing seeding -->
+![Knockout Bracket](images/knockout.png)
+
+The Round of 16 is the first moment where the bracket really starts to take shape.  
+Big favorites like the **United States (1)**, **United Kingdom (2)**, and **China (3)** enter the competition with high expectations, facing lower-seeded opponents that look weaker on paper.
+
+However, not all matches are so clear. Some games are very close in seeding, such as **Turkey (8) vs Adolf Hitler (9)** and **Israel (7) vs Australia (10)**, where a small difference could change everything.
+
+There are also interesting and symbolic matchups. **New York City (4) vs Russia (13)** is strong geopolitical matchup, while **Japan (6) vs Germany (11)** is another shock of cultures.
+
+This round sets the tone for the tournament: top seeds try to avoid surprises, while lower seeds look for one chance to create an upset.
 
 ---
 
