@@ -19,9 +19,25 @@ The Grand Final is decided in a single, decisive confrontation.
 
 The two hubs are evaluated head-to-head using the same scoring framework as in previous rounds. All metrics are applied consistently, and only relative performance matters.
 
+Let's reveal the results metric by metric. 
 
-<!-- Placeholder: Final match result visualization (e.g., bar chart or radar plot) -->
+**Efficiency** is something we saw the UK struggle with in it's match against Japan. How does it fair against the USA here.
 
+![Match analysis](images/UK_vs_USA_eff.png)
+
+As you can see it's a very, **very** close match. Both seem to be on equal standings regarding how quickly they lead to victory in the Wikispedia games.
+
+Now let's look at **Versatility**. The UK was much more versatile than Japan before, it is going to manage to win this metric over the USA?
+
+![Match analysis](images/UK_vs_USA_ver.png)
+
+Once again a terribly close call but the USA maanges to pull ahead here! So far this match has proven to be extremely close! But one hub must make it out on top. Will popularity clear up the winner? We saw how much more popualr the UK was before with Japan. This could be a chance for the UK to secure the victory! Let's look at this final metric :
+
+![Match analysis](images/UK_vs_USA_pop.png)
+
+USA complelty slams the door on the UK with popularity. It proves it is the dominent Hub by winning over the UK (which was already a very promising hub) in all three metrics. USA has it all, it helps reach the end goal faster, it has a wide breadth of connections and it is immensely popular. Here is the final score :
+
+![Match analysis](images/UK_vs_USA_final.png)
 
 🏆 **Champion: United_States**
 
@@ -35,14 +51,14 @@ This hub is crowned the **World Cup of Wikipedia Hubs champion**.
 
 The tournament concludes with a final ranking of the top competitors.
 
-**Top 1 : United_States**  
-**Top 2 : United_Kingdom**  
-**Top 4 : South_Africa**
-**Top 4 : Germany**  
+**Top 1 : United States**  
+**Top 2 : United Kingdom**  
+**Top 4 : South Africa**
+**Top 4 : Japan**  
 **Top 8 : Israel**  
-**Top 8 : Adolf_Hitler**
-**Top 8 : Russia**  
-**Top 8 : China**  
+**Top 8 : London**
+**Top 8 : Germany**  
+**Top 8 : New York City**  
 
 ---
 
