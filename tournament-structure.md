@@ -66,6 +66,14 @@ At this stage of the tournament, the precise ranking formula is intentionally le
 - **Versatility**  
   Versatility measures how a hub connects different areas of knowledge.  
   Pages that bridge multiple topics or appear in diverse navigation contexts are considered more versatile.
+  This is all based off the categories which you can visualize here with this correlation graph between all of them :
+  {% include_relative _plots/categories_graph.html %}
+
+  You can see that some of these categories can be very close, so we curate them based on similarity and end up with a list of categories for each article. For example, here's the category hierarchy of Gottfried Wilhelm Leibniz. 
+  {% include_relative _plots/article_categories.html %}
+
+  The Versatility score is then based off how many catefories each hub has, giving more weight to the ones who appear less frequently!
+
 
 - **Effectiveness**  
   Effectiveness reflects whether visiting a page helps players make progress toward their target or slows them down.  
