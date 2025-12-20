@@ -24,7 +24,7 @@ Here are the 64 most important nodes using those measures.hidden at this stage o
 
 From those two mesures we can extract visual graphs of the wikipedia network architecture based on beetweenness centrality measure over links : 
 
-![Graph of the wikipedia network based on beetweenness centrality measure](images/graph_wikipedia.png)
+{% include_relative _plots/bookmakers_plot.html %}
 
 ## The Odds Board
 
@@ -209,6 +209,49 @@ articles.forEach(article => {
 table.appendChild(tbody);
 container.appendChild(table);
 
+// Restore previous selection from localStorage (if any)
+(function restoreSelectionFromStorage() {
+  let raw = null;
+  try {
+    raw = localStorage.getItem('wc_hubs_bet');
+  } catch (e) {
+    return;
+  }
+  if (!raw) return;
+
+  let stored = null;
+  try {
+    stored = JSON.parse(raw);
+  } catch (e) {
+    console.warn('Could not parse wc_hubs_bet from localStorage', e);
+    return;
+  }
+  if (!Array.isArray(stored) || stored.length === 0) return;
+
+  const inputsByName = {};
+  document
+    .querySelectorAll('#optionsContainer input[type="checkbox"]')
+    .forEach(cb => { inputsByName[cb.value] = cb; });
+
+  const list = document.getElementById("selectionList");
+  list.innerHTML = "";
+  let restoredCount = 0;
+
+  stored.forEach(item => {
+    const cb = inputsByName[item.name];
+    if (!cb) return;
+    cb.checked = true;
+    restoredCount += 1;
+    const odd = typeof item.odd === "number" ? item.odd : parseFloat(item.odd);
+    const text = `${cb.value.replace(/_/g, ' ')} - ${isNaN(odd) ? "" : odd.toFixed(2)}`;
+    const li = document.createElement("li");
+    li.textContent = text;
+    list.appendChild(li);
+  });
+
+  console.log(`Restored ${restoredCount} selections from localStorage.`);
+})();
+
 // Limit to exactly 8 selections
 function limitSelection(checkbox) {
   const checked = document.querySelectorAll('#optionsContainer input:checked');
@@ -305,11 +348,11 @@ Noa : Spain, Austalia, Portugal, Italy, Earth, London, Islam, Latin
 
 Tolga : United_states, England, China, World_war_I, Earth, United_kindgom, Europe, Turkey
 
-Antoine : Oiseau, XXe siècle, langue anglaise, Seconde Guerre mondiale, Organisation des Nations unies, liste des pays par système de gouvernement, animal, classification scientifique
+Antoine: Bird, 20th century, English language, World War II, United Nations, list of countries by system of government, animal, scientific classification
 
-Max : États-Unis, Australie, Seconde Guerre mondiale, France, Brésil, monnaie, eau, classification scientifique
+Max: United States, Australia, World War II, France, Brazil, currency, water, scientific classification
 
-Julien : États-Unis, XXe siècle, Angleterre, agriculture, Seconde Guerre mondiale, christianisme, Amérique du Nord, République populaire de Chine
+Julien: United States, 20th century, England, agriculture, World War II, Christianity, North America, People’s Republic of China
 
 <!-- Placeholder: Everybody explain why they chose there hub ??-->
 

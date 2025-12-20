@@ -56,6 +56,8 @@ We always assume players have 80 $ and bet 10 $ on each of 8 articles.
 
 #### Strategy 1 – Follow the bookmakers
 
+![Graph of the wikipedia network based on beetweenness centrality measure](images/graph_wikipedia.png)
+
 If someone simply follows the odds given by the bookmakers on the real competition, they would win on:
 
 | Article        | Odd  | Result |
@@ -200,7 +202,7 @@ Below you can see the 8 contenders you selected on the betting floor and how the
   const listItems = stored.map(p => {
     const isWinner = winners.includes(p.name);
     const label = p.name.replace(/_/g, " ");
-    return `<li>${label} : ${p.odd.toFixed(2)} ${isWinner ? "(in final Top 8)" : ""}</li>`;
+    return `<li>${label} : ${p.odd.toFixed(2)} ${isWinner ? " &rarr; WIN (is in final Top 8)" : ""}</li>`;
   }).join("");
 
   summaryEl.innerHTML = `
