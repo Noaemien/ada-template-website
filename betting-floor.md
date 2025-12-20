@@ -283,7 +283,7 @@ ul { margin-top: 10px; }
 
 ### Now, let's see some betting strategies example
 
-We always assume you have 80 \$ and bet 10 \$ on each of 8 articles.
+We always assume you have 80\$ and bet 10\$ on each of 8 articles.
 
 #### Strategy 1 : Follow the bookmakers
 

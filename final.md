@@ -52,18 +52,32 @@ Now the part you have been waiting for : Did you win some money ?
 
 We always assume players have 80 $ and bet 10 $ on each of 8 articles.
 
+---
+
 #### Strategy 1 – Follow the bookmakers
 
 If someone simply follows the odds given by the bookmakers on the real competition, they would win on:
 
-- **United States** (1.00)
-- **United Kingdom** (3.36)
-- **World War II** (6.07)
+| Article        | Odd  | Result |
+|----------------|------|--------|
+| United States  | 1.00 | WIN    |
+| United Kingdom | 3.36 | WIN    |
+| Europe         | 4.34 |        |
+| England        | 5.09 |        |
+| France         | 5.23 |        |
+| Germany        | 5.75 | WIN    |
+| World War II   | 6.07 |        |
+| Africa         | 6.99 |        |
 
 Total return:
 
-- `10 × (1.00 + 3.36 + 6.07) = 10 × 10.43 = 104.3 $`
-- Profit: `104.3 $ − 80 $ = 24.3 $`
+- `10 × (1.00 + 3.36 + 5.75) = 10 × 10.1 = 101.1 $`
+
+Profit:
+
+- `101.1 $ − 80 $ = 21.1 $`
+
+---
 
 #### Strategy 2 – Perfectly predict the Top 8 hubs
 
@@ -74,71 +88,69 @@ If someone predicted the 8 best hubs (including one article not even offered by 
 The return from the 7 bettable winners would be:
 
 - `10 × (1.00 + 8.05 + 10.63 + 3.36 + 11.53 + 8.35 + 5.75) = 486.7 $`
-- Profit: `486.7 $ − 80 $ = 406.7 $`
+
+Profit:
+
+- `486.7 $ − 80 $ = 406.7 $`
 
 Note to mention that Adolf Hitler was not even proposed by the bookmakers, showing that the bookmakers could'nt predict the competition well and that the graph analysis alone is not sufficient enough to estimate wikispeedia's players behaviors.
 Underdogs that were not proposed to bet on is part of the game (that's one way how bookmakers can make money)
+
+---
 
 #### Strategy 3 – Use global popularity
 
 Picking the top 8 most popular pages on Wikipedia over the last 10 years.  
 We realize that these are **not** the same as the nodes favored by the Wikipedia link architecture, so the overlap with the bookmaker’s list is limited : Indeed, we need to go up to the 15th most visited page of Wikipedia to find 8 articles that are also porposed by the bookmakers.
 
-| Article by popularity on the real world wikipedia           |
-|--------------------|
-| 1. United States      |
-| 2. Wikipedia          |
-| 3. India              |
-| 4. Google             |
-| 5. World War II       |
-| 6. Adolf Hitler       |
-| 7. United Kingdom     |
-| 8. Barack Obama       |
-| 9. World War I        |
-| 10. Michael Jordan     |
-| 11. Winston Churchill  |
-| 12. China              |
-| 13. Elvis Presley      |
-| 14. Canada             |
-| 15. Australia          |
+| Rank | Top article by popularity on the real world wikipedia | Selected in strategy | Result |
+|------|-------------------------------------------------------|----------------------|--------|
+| 1    | United States                                         | X                    | WIN (1.00) |
+| 2    | Wikipedia                                             |                      |        |
+| 3    | India                                                 | X                    |        |
+| 4    | Google                                                |                      |        |
+| 5    | World War II                                          | X                    |        |
+| 6    | Adolf Hitler                                          |                      |        |
+| 7    | United Kingdom                                        | X                    | WIN (3.36) |
+| 8    | Barack Obama                                          |                      |        |
+| 9    | World War I                                           | X                    |        |
+| 10   | Michael Jordan                                        |                      |        |
+| 11   | Winston Churchill                                     |                      |        |
+| 12   | China                                                 | X                    | WIN (8.35) |
+| 13   | Elvis Presley                                         |                      |        |
+| 14   | Canada                                                | X                    |        |
+| 15   | Australia                                             | X                    |        |
 
-From the bookmaker’s offered list, a player using this strategy would select:
-
-- **United States, India, World War II, United Kingdom, World War I, China, Canada, Australia**
-
-Among these, the actual winners are:
-
-- **United States** (1.00)
-- **India** (7.32)
-- **World War II** (6.07)
-- **United Kingdom** (3.36)
-- **China** (8.35)
 
 Total return:
 
-- `10 × (1.00 + 7.32 + 6.07 + 3.36 + 8.35) = 261 $`
-- Profit: `261 $ − 80 $ = 181 $`
+- `10 × (1.00 + 3.36 + 8.35) = 127.10 $`
 
-This strategy clearly outperforms the one directly following the bookmakers’ odds. It shows that using **page popularity** can be more reliable for predicting players’ behavior than relying only on the **graph architecture**.
+Profit:
 
-Since the Wikispeedia database is built from **all** players, it would be interesting to organize a second “World Cup of Hubs” but this time based only on the **best players**. In that setting, we might expect the bookmakers’ graph-based strategy to perform better, because top players are more likely to choose **efficient links** rather than links that simply sound familiar.
+- `127.10 $ − 80 $ = 47.1 $`
 
+This strategy outperforms the one directly following the bookmakers’ odds. It shows that using **page popularity** can be more reliable for predicting players’ behavior than relying only on the **graph architecture**.
+
+Since the Wikispeedia game database is built from **all** players, it would be interesting to organize a second “World Cup of Hubs” but this time based only on the **best players**. In that setting, we might expect the bookmakers’ graph-based strategy to perform better, because top players are more likely to choose **efficient links** rather than links that simply sound familiar.
+
+---
 
 #### Strategy 4 : Human Intuition
 
 Let's see how much money our group made...
 
-Noa : - -> - 80\$ + 0\$ = - 80\$
-
-Tolga : United_States, China, United_Kingdom -> -80\$ + 1* 10\$ + 8.35* 10\$ + 3.36* 10\$ = 47.10\$
-
-Antoine : - -> - 80\$ + 0\$ = - 80\$
-
-Max : United_States -> -80\$ + 1* 10\$ = -70\$
-
-Julien : United_States, China -> -80\$ + 1* 10\$ + 8.35* 10\$ = 13.5\$
+| Player | Winning bets                         | Profit                                       |
+|--------|--------------------------------------|----------------------------------------------|
+| Noa    | -                                    | - 80\$ + 0\$ = - 80\$                        |
+| Tolga  | United_States, China, United_Kingdom| -80\$ + 1* 10\$ + 8.35* 10\$ + 3.36* 10\$ = 47.10\$ |
+| Antoine| -                                    | - 80\$ + 0\$ = - 80\$                        |
+| Max    | United_States                        | -80\$ + 1* 10\$ = -70\$                      |
+| Julien | United_States, China                 | -80\$ + 1* 10\$ + 8.35* 10\$ = 13.5\$        |
 
 this shows that based on no serious strategy, humans perform pretty badly on this type of gamble. Did you do better ? Lets see :
+
+---
 
 #### Strategy 5 : YOUR BET
 
@@ -188,7 +200,7 @@ Below you can see the 8 contenders you selected on the betting floor and how the
   const listItems = stored.map(p => {
     const isWinner = winners.includes(p.name);
     const label = p.name.replace(/_/g, " ");
-    return `<li>${label} — odd_top8: ${p.odd.toFixed(2)} ${isWinner ? "(in final Top 8)" : ""}</li>`;
+    return `<li>${label} : ${p.odd.toFixed(2)} ${isWinner ? "(in final Top 8)" : ""}</li>`;
   }).join("");
 
   summaryEl.innerHTML = `
@@ -196,7 +208,7 @@ Below you can see the 8 contenders you selected on the betting floor and how the
     <ul>${listItems}</ul>
     <p>Number of your hubs that reached the final Top 8: <strong>${winningPicks.length}</strong></p>
     <p>Sum of the odds of your hubs that are in the final Top 8: <strong>${sumOdds.toFixed(2)}</strong></p>
-    <p>Since you bet ${betPerArticle} on each hub (total stake ${stake}), your total return would be <strong>${totalReturn.toFixed(2)}</strong> and your profit <strong>${profit.toFixed(2)}</strong>.</p>
+    <p>Since you bet ${betPerArticle}$ on each hub (total stake ${stake}$), your total return would be <strong>${totalReturn.toFixed(2)}</strong> and your profit <strong>${profit.toFixed(2)}</strong>.</p>
   `;
 })();
 </script>
