@@ -73,8 +73,15 @@ Instead, each competitor is evaluated using a **composite score** that captures 
   The Versatility score is then based on how many categories each hub has, giving more weight to the ones that appear less frequently.
 
 - **Effectiveness**  
-  Effectiveness reflects whether visiting a page helps players make progress toward their target or slows them down.
-  Let's have an insight into this metric, without showing names of course, it would spoil part of the core!
+  Efficiency looks at what really happens when players visit a page.
+
+  Some pages feel promising but end up wasting time: players click them, hesitate, go back, or take long detours. Other pages do the opposite. They reduce confusion, avoid dead ends, and help players reach their target faster.
+
+  To capture this, the efficiency metric combines three simple ideas: how often games succeed when a page appears, how often players immediately backtrack after visiting it, and how long games last when the page is used. Aggregated together, these signals describe whether a page helps navigation or just looks important.
+
+  The plot below offers a first glimpse into the efficiency metric, hinting at which ones help players move forward and which ones slow them down, without revealing any names of course, we won't spoil the results 
+
+
 {% include_relative _plots/efficiency_metric_introduction.html %}
 
 Each of these metrics highlights a different aspect of what makes a **good hub**. 
