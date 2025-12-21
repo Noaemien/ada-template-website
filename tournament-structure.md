@@ -72,7 +72,7 @@ Instead, each competitor is evaluated using a **composite score** that captures 
 
   The Versatility score is then based on how many categories each hub has, giving more weight to the ones that appear less frequently.
 
-- **Effectiveness**  
+- **Efficiency**  
   Efficiency looks at what really happens when players visit a page.
 
   Some pages feel promising but end up wasting time: players click them, hesitate, go back, or take long detours. Other pages do the opposite. They reduce confusion, avoid dead ends, and help players reach their target faster.

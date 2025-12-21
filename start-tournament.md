@@ -3,6 +3,16 @@ layout: default
 title: The Start of the Tournament
 ---
 
+# The Tournament has begun !
+
+Reminder : The winners of each groups are determined via a combination of the 3 metrics described in the previous page :
+
+* **Popularity**
+* **Versatility**
+* **Efficiency**
+
+It will be the same for the rest of the competition.
+
 ## Group Stage Results
 
 During the group stage, hubs are evaluated against the other members of their group.
