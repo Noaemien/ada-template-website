@@ -91,4 +91,4 @@ With the competitors introduced, the tournament atmosphere begins to build.
 
 Before the first match is played, predictions will be made.  
  **Let's step to the betting floor and choose your contender !**  
-[Enter the Betting Floor](ada-template-website/betting-floor)
+[Go to next chapter : The Betting Floor](/ada-template-website/betting-floor)
