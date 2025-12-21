@@ -8,7 +8,28 @@ title: The Grand Final
 After weeks of competition, countless matchups, and relentless eliminations, the World Cup of Hubs reaches its final moment.
 
 Two hubs remain:  
-**[United States](https://en.wikipedia.org/wiki/United_States)** vs **[United Kingdom](https://en.wikipedia.org/wiki/United_Kingdom)**
+
+<div style="
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:28px;
+  padding:22px;
+  margin:36px 0;
+  border:2px solid #e0e0e0;
+  border-radius:12px;
+  font-size:1.6em;
+">
+  <a href="https://en.wikipedia.org/wiki/United_States" target="_blank">
+    <strong>United States</strong>
+  </a>
+  <span style="font-weight:600;">VS</span>
+  <a href="https://en.wikipedia.org/wiki/United_Kingdom" target="_blank">
+    <strong>United Kingdom</strong>
+  </a>
+</div>
+
+
 
 Both have survived the group stage and three knockout rounds. Each followed a different path, faced different opponents, and proved its strength under pressure.
 
