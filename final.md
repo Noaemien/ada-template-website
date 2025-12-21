@@ -234,7 +234,7 @@ Below you can see the 8 contenders you selected on the betting floor and how the
     <ul>${listItems}</ul>
     <p>Number of your hubs that reached the final Top 8: <strong>${winningPicks.length}</strong></p>
     <p>Sum of the odds of your hubs that are in the final Top 8: <strong>${sumOdds.toFixed(2)}</strong></p>
-    <p>Since you bet ${betPerArticle}$ on each hub (total stake ${stake}$), your total return would be <strong>${totalReturn.toFixed(2)}</strong> and your profit <strong>${profit.toFixed(2)}</strong>.</p>
+    <p>Since you bet ${betPerArticle}$ on each hub (total stake ${stake}$), your total return would be <strong>${totalReturn.toFixed(2)}$</strong> and your profit <strong style="color:red">${profit.toFixed(2)}\$</strong></p>
   `;
 })();
 </script>

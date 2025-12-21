@@ -212,7 +212,7 @@ const thead = document.createElement("thead");
 thead.innerHTML = `
   <tr>
     <th>article</th>
-    <th>odd_top8</th>
+    <th>odd of finishing in top 8</th>
   </tr>
 `;
 table.appendChild(thead);
@@ -320,38 +320,11 @@ function saveSelection() {
 
 </script>
 
-<style>
-.container { max-width: 800px; margin-top: 10px; }
-.option { width: 250px; margin-bottom: 5px; }
-
-.options-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.options-table th,
-.options-table td {
-  padding: 4px 8px;
-  border-bottom: 1px solid #ddd;
-  text-align: left;
-}
-
-.options-table th {
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  letter-spacing: 0.05em;
-}
-
-button { margin-top: 20px; padding: 8px 20px; font-size: 16px; cursor: pointer; }
-h3 { margin-top: 30px; }
-ul { margin-top: 10px; }
-</style>
-
 ---
 
 ### Now, let's see some betting strategies example
 
-We always assume you have $80$ and bet $10$ on each of 8 articles.
+<p>We always assume you have 80\$ and bet 10\$ on each of 8 articles.<p>
 
 #### Strategy 1 : Follow the bookmakers
 

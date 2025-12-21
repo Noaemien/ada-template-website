@@ -293,3 +293,29 @@ footer {
   color: #fff;
   transform: scale(0.97);
 }
+
+
+.container { max-width: 800px; margin-top: 10px; }
+.option { width: 250px; margin-bottom: 5px; }
+
+.options-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.options-table th,
+.options-table td {
+  padding: 4px 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.options-table th {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+
+button { margin-top: 20px; padding: 8px 20px; font-size: 16px; cursor: pointer; }
+h3 { margin-top: 30px; }
+ul { margin-top: 10px; }
