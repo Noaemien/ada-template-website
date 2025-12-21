@@ -47,7 +47,7 @@ This is the where we separate the cool kids from the others. Popularity quantifi
 
 The metric integrates multiple behavioral signals:
 - Total appearances in both finished and unfinished games.
-- Repeated visits within the same game session indicating a feeling of safe haven.
+- Repeated visits within the same game session.
 - Successful continuation after backtracking.
 - Penalties associated with dead-end behavior due to the lack of encouragement to continue.
 
@@ -61,7 +61,9 @@ Here are the leaders in each category of most appearance, continuation after bac
   </iframe>
 </div>
 
-These points from each category were combined to create a complex final popularity score. Creating the following distribution:
+This analysis shows that popularity is not one concept but a composit one. Which is visible through different articles leading different types of popularities, except a few overall dominant ones. The most visited property shows the familiarity of the users of this topic while the continuing after backtracking captures a feeling of being saved. 
+
+So after confirming these properties capture different behaviours, points from each one were combined to create a complex final popularity score. Creating the following distribution:
 
 <div style="width:100%;">
   <iframe
@@ -71,15 +73,13 @@ These points from each category were combined to create a complex final populari
   </iframe>
 </div>
 
-A logarithmic transformation is applied to raw counts to reduce the influence of extreme outliers.
-
-As a result, the popularity score reflects if a page is attractive enough to make the player keep going.
+The observed distribution that is not just skewed but structurally unequal proves the users preferential attachment towards some articles. Showing that just raw popularity is not informative for ranking quality. This proves the reason why a normalisation using a logarithmic transformation is necessary in creating a meaningful global score metric.
 
 ---
 
 ## Metric 2: Versatility
 
-Versatility measures the conceptial connectivity of a hub by quantifying how many distinct topical regions it connects.
+Versatility measures the conceptial connectivity of a hub by quantifying how many distinct topical regions it connects. Making them specially important for pathfinding shortcuts.
 
 To get this score a hierarchial expansion from Wikipedia category annotations was utilized:
 - Each article contributes its own categories.
@@ -94,6 +94,8 @@ To get this score a hierarchial expansion from Wikipedia category annotations wa
   </iframe>
 </div>
 
+Versitality shows a broader and less extreme distribution compared to popularity. Still being dominated by a few global hubs but there is also a emerging subset of smaller hubs that are acting like conceptual bridges.
+
 <div style="width:100%; margin-top:14px;">
   <iframe
     src="{{ '/_plots/analysis_plots/versatility_coverage.html' | relative_url }}"
@@ -102,9 +104,7 @@ To get this score a hierarchial expansion from Wikipedia category annotations wa
   </iframe>
 </div>
 
-Therefore versitality captures not only the topic diversity but goes further into linked categories to better identify topical connections.
-
-Hubs with high versatility tend to link otherwise distant thematic regions, offering multiple plausible navigation paths even when their raw popularity is limited. Meaning this is specially important for players who want to take shortcuts.
+Therefore versitality captures not only the topic diversity but goes further into linked categories to better identify topical connections. Thanks to this property, multiple plausible navigation paths within the limited depth are offered. This is the case sometimes even the raw popularity of the articles is not as high. Pointing towards a complementaryquality between these metrics. 
 
 ---
 
@@ -125,7 +125,9 @@ It combines three behavioral indicators:
   </iframe>
 </div>
 
-Metrics where lower values indicate better performance (backtracking frequency and duration) are inverted and normalized prior to aggregation.
+The efficiency–success analysis showed that many high success pages still induce long paths, repeated backtracking, or high dead-end rates. These are unecessary navigational costs that are not acceptable in Wikispeedia. With a correct penalizaiton of these hidden costs a complex efficiency property that cannot be reduced to popularity or success frequency alone is produced.
+
+For better calculations metrics where lower values indicate better performance (backtracking frequency and duration) are inverted and normalized prior to aggregation.
 
 So using this we are able to separate the hubs that appear out of pure attraction due to popularity from the ones that help with mindfull pathfinding aimed at reaching the final goal.
 
