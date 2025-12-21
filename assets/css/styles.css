@@ -281,16 +281,15 @@ footer {
   background-color: #007bff;
   color: #fff;
   font-weight: 600;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
 
 .change-page-button:hover {
   background-color: #005fcc;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+  color: #fff;
+  transform: scale(1.05);
 }
 
 .change-page-button:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  color: #fff;
+  transform: scale(0.97);
 }
