@@ -75,7 +75,9 @@ Instead, each competitor is evaluated using a **composite score** that captures 
 
 
 - **Effectiveness**  
-  Effectiveness reflects whether visiting a page helps players make progress toward their target or slows them down.  
+  Effectiveness reflects whether visiting a page helps players make progress toward their target or slows them down.
+  Let's have an insight on this metric, without showing names of course, it would spoil a part of the core ! 
+  {% include_relative _plots/efficiency_metric_introduction.html %}
 
 Each of these metrics highlights a different aspect on how we could define a hub beinf a **good hub**. 
 

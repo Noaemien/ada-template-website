@@ -143,6 +143,19 @@ For better calculations metrics where lower values indicate better performance (
 
 So using this we are able to separate the hubs that appear out of pure attraction due to popularity from the ones that help with mindfull pathfinding aimed at reaching the final goal.
 
+The parallel coordinates plot below breaks the efficiency score into its three metrics.
+
+Each line represents one hub. By following a line from left to right, we can see *how* a hub achieves its efficiency. Some hubs perform well because they consistently appear in successful games. Others stand out by strongly reducing dead ends or shortening navigation paths. A smaller number manage to balance all three dimensions at once.
+
+Rather than pointing to a single “best” formula for efficiency, this visualization reveals **different efficiency profiles**: fast but risky hubs, safe but slow ones, and rare hubs that combine speed, safety, and success.
+
+<div style="width:100%;">
+  <iframe
+    src="{{ '/_plots/analysis_plots/efficiency_decomposition_top_50.html' | relative_url }}"
+    style="width:100%; height:520px; border:0;"
+    loading="lazy">
+  </iframe>
+</div>
 
 ---
 
