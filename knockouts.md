@@ -36,7 +36,7 @@ At first glance, the **Global Score is extremely close** (London 50.79% vs China
 Popularity is also very close (50.79% vs 49.21%, actually reflecting the final result), while **Efficiency actually favors China (52.15% vs 47.85%)**.  
 
 However, London quietly dominates **Versatility (54.2% vs 45.8%)**, which turns out to be the decisive factor.
-This suggests that London’s hub is more strategically connected, possibly due to strong centralization around people and business. Even if both share a wide spread of categories associated to them, London might be more precise and offer more variety.
+This suggests that London’s hub is more strategically connected, possibly due to strong centralization around people and business but most probably because the Wikispeedia game is based on the english version of Wikipedia. Even if both share a wide spread of categories associated to them, London might be more precise and offer more variety on this english network.
 
 In a head-to-head comparison where versatility matters, London gains just enough edge to flip the outcome.
 

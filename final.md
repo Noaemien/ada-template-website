@@ -34,7 +34,7 @@ Let's reveal the results metric by metric.
 
 As you can see it's a very, **very** close match. Both seem to be on equal footing regarding how quickly they lead to victory in the Wikispeedia game.
 
-Now let's look at **Versatility**. The UK was much more versatile than Japan before—will it manage to win this metric over the USA?
+Now let's look at **Versatility**. The UK was much more versatile than Japan before, will it manage to win this metric over the USA?
 
 ![Match analysis](images/UK_vs_USA_ver.png)
 

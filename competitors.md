@@ -20,7 +20,7 @@ Their strengths, weaknesses, and odds of winning will be explored next.
 Wikispeedia contains thousands of Wikipedia articles that appear in real player paths.  
 Not all of them are suitable competitors.
 
-We can have a look at the composition of the Wikispeedia database, it contains a reduced portion of the articles from the english language version of Wikipedia: 
+We can have a look at the composition of the Wikispeedia database, it contains a reduced portion of the articles from **the english language version of Wikipedia**: 
 
 {% include_relative _plots/articles_overview.html %}
 
