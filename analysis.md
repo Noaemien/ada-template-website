@@ -117,6 +117,18 @@ It combines three behavioral indicators:
 - The frequency of immediate backtracking following the hub.
 - The average game duration associated with its usage.
 
+We can first have a look at the best hubs ranked by efficiency amongst all the articles : 
+<div style="width:100%;">
+  <iframe
+    src="{{ '/_plots/analysis_plots/efficiency_top_hubs.html' | relative_url }}"
+    style="width:100%; height:520px; border:0;"
+    loading="lazy">
+  </iframe>
+</div>
+
+
+Here is an efficiency-success analysis : 
+
 <div style="width:100%;">
   <iframe
     src="{{ '/_plots/analysis_plots/efficiency_vs_success.html' | relative_url }}"
@@ -125,7 +137,7 @@ It combines three behavioral indicators:
   </iframe>
 </div>
 
-The efficiency–success analysis showed that many high success pages still induce long paths, repeated backtracking, or high dead-end rates. These are unecessary navigational costs that are not acceptable in Wikispeedia. With a correct penalizaiton of these hidden costs a complex efficiency property that cannot be reduced to popularity or success frequency alone is produced.
+The efficiency-success analysis showed that many high success pages still induce long paths, repeated backtracking, or high dead-end rates. These are unecessary navigational costs that are not acceptable in Wikispeedia. With a correct penalizaiton of these hidden costs a complex efficiency property that cannot be reduced to popularity or success frequency alone is produced.
 
 For better calculations metrics where lower values indicate better performance (backtracking frequency and duration) are inverted and normalized prior to aggregation.
 

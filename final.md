@@ -48,6 +48,8 @@ USA complelty slams the door on the UK with popularity. It proves it is the domi
 
 🏆 **Champion: United_States**
 
+![Champion](images/champion.png)
+
 This hub is crowned the **World Cup of Wikipedia Hubs champion**.
 
 <!-- Placeholder: Champion highlight figure or celebratory graphic -->
