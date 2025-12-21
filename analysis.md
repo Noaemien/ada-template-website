@@ -174,12 +174,6 @@ To look at the correlation between popularity, versatility and efficiency we pro
 
 ---
 
-
-## What This Tells Us About Wikipedia Navigation
-...
-
----
-
 **Thank you for following us through our World Cup of Hubs ! We hope you enjoyed it !**
 
 <div class="change-page-button-wrapper">

@@ -47,7 +47,7 @@ By utilizing Katz centrality, we could identify "hidden gems": pages that might 
 
 ### Visual representation
 
-For illustration, we can extract visual graphs of the wikipedia network architecture. Here are the 100 most important nodes using the Betweenness centrality measure.
+For illustration, we can extract visual graphs of the **wikipedia network** architecture. Here are the 100 most important nodes using the Betweenness centrality measure.
 
 {% include_relative _plots/centrality_graph.html %}
 
@@ -369,24 +369,25 @@ Now consider a different idea: pick the top 8 most popular pages on Wikipedia ov
 
 Our group also tried to find their own guess before looking at this project:
 
-Noa : Spain, Austalia, Portugal, Italy, Earth, London, Islam, Latin 
+**Noa** : Spain, Austalia, Portugal, Italy, Earth, London, Islam, Latin 
 
-Tolga : United_states, England, China, World_war_I, Earth, United_kindgom, Europe, Turkey
+**Tolga** : United_states, England, China, World_war_I, Earth, United_kindgom, Europe, Turkey
 
-Antoine: Bird, 20th century, English language, World War II, United Nations, list of countries by system of government, animal, scientific classification
+**Antoine**: Bird, 20th century, English language, World War II, United Nations, list of countries by system of government, animal, scientific classification
 
-Max: United States, Australia, World War II, France, Brazil, currency, water, scientific classification
+**Max**: United States, Australia, World War II, France, Brazil, currency, water, scientific classification
 
-Julien: United States, 20th century, England, agriculture, World War II, Christianity, North America, People’s Republic of China
+**Julien**: United States, 20th century, England, agriculture, World War II, Christianity, North America, People’s Republic of China
 
 <!-- Placeholder: Everybody explain why they chose there hub ??-->
 
+#### Strategy 5 : YOUR Prediction
 
-We will look back at those strategies at the end of the competition and see which one is the best, and the worst...
-
-We will also track how YOUR pick perform and see whether human intuition can keep up with the data.
+We will track how YOUR pick perform and see whether human intuition can keep up with the data.
 
 ---
+
+We will look back at those strategies at the end of the competition and see which one is the best, and the worst...
 
 <!-- MathJax loader to render LaTeX formulas on this page -->
 <script>
