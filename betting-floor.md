@@ -19,10 +19,35 @@ Another decides whether to trust them.
 ## The Bookmakers : Setting the Odds
 
 To do so, the bookmakers scrapped the whole wikipedia website to extract a graph architecture from it. (they unfortunately do not have access at the Wikispeedia players game data so they cannot predict perfectly the outcome of the competition)
-To estimate the importance of a node to build a graph we usually use centrality measure. Bookmakers here mainly relied on **Betweenness** and **Katz** **centrality** measures.
-Here are the 64 most important nodes using those measures.hidden at this stage of the competition.
+To estimate the importance of a node over a network, we usually use centrality measure, a central concept from network science. Bookmakers decided to mainly rely on a combination of **Betweenness** and **Katz** **centrality** measures.
 
-From those two mesures we can extract visual graphs of the wikipedia network architecture based on beetweenness centrality measure over links : 
+### Betweenness Centrality
+
+Betweenness centrality measures how often a node lies on the shortest paths between other nodes.
+
+In the context of Wikispeedia, this reflects:
+
+* How often a page acts as a mandatory passage point or bottleneck.
+* How frequently it bridges otherwise unrelated navigation paths.
+* The extent to which a page is difficult to bypass when trying to reach a destination efficiently.
+
+By ranking pages according to betweenness centrality, these gamblers were able to isolate structurally critical hubs long before the tournament began, identifying the "bridges" that players are almost forced to cross.
+
+### Katz Centrality
+
+Katz centrality measures a node's influence by taking into account the total number of walks between it and all other nodes, weighting shorter paths more heavily than longer ones.
+
+In the context of Wikispeedia, this means:
+
+* Evaluating a page’s importance based not just on its immediate links, but on its entire reach across the network.
+* Recognizing pages that are "close" to a large number of other pages, even if they aren't on the absolute shortest path.
+* Accounting for the recursive influence of a node, where being linked to by other important nodes increases its own value.
+
+By utilizing Katz centrality, we could identify "hidden gems": pages that might not be the most obvious hubs but possess a high degree of connectivity to various niche clusters. This allowed them to predict which pages would serve as the most effective "launching pads" to reach obscure target topics.
+
+### Visual representation
+
+For illustration, we can extract visual graphs of the wikipedia network architecture. Here are the 100 most important nodes using the Betweenness centrality measure.
 
 {% include_relative _plots/centrality_graph.html %}
 

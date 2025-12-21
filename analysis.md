@@ -174,49 +174,6 @@ To look at the correlation between popularity, versatility and efficiency we pro
 
 ---
 
-## How could have a gambler win ?
-
-At the start of the tournament, predictions were based only on the *famousness* of hubs.
-
-The best gamblers often called **sharks** on betting apps could have approached Wikipedia not as a collection of articles, but as a **graph**.
-
-Their strategy relied on a central concept from network science:
-
-### Betweenness Centrality
-
-Betweenness centrality measures how often a node lies on the shortest paths between other nodes.
-
-In the context of Wikispeedia, this means:
-- how often a page acts as a **mandatory passage point**,
-- how frequently it connects unrelated navigation paths,
-- and how difficult it is to bypass.
-
-<!-- Placeholder: Visualization of betweenness centrality in the Wikispeedia graph -->
-
-By ranking pages according to betweenness centrality, these gamblers were able to **isolate structurally critical hubs** long before the tournament began.
-
-These hubs:
-- consistently performed well across metrics,
-- survived normalization and seeding,
-- and dominated in knockout scenarios.
-
-They didn’t guess.  
-They calculated.
-
----
-
-## Were the Sharks right ?
-
-When comparing prediction accuracy:
-- popularity explains **visibility**,
-- versatility explains **flexibility**,
-- effectiveness explains **victory**.
-
-Structural metrics, especially betweenness centrality, capture all three.
-
-In the end, the sharks didn’t just predict the winner : they predicted the *type* of hub that could win.
-
----
 
 ## What This Tells Us About Wikipedia Navigation
 ...
