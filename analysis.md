@@ -60,7 +60,7 @@ Here are the leaders in each category of most appearance, continuation after bac
   </iframe>
 </div>
 
-This analysis shows that popularity is not one concept but a composit one. Which is visible through different articles leading different types of popularities, except a few overall dominant ones. The most visited property shows the familiarity of the users of this topic while the continuing after backtracking captures a feeling of being saved. 
+This analysis shows that popularity is not just one concept but a composit one. Except a few overall dominant articles, different leaders emerged for each sub-popularity metric. This proved that looking at the popularity as just a pure "Number of Clicks" would not be logical and marked the importance of our carefully designed first complex metric. With each sub-category showing a different feeling of attraction for the players like the most visited property shows the familiarity with this topic while the continuing after backtracking captures a feeling of the articles being promising enough to save the run. 
 
 So after confirming these properties capture different behaviours, points from each one were combined to create a complex final popularity score. Creating the following distribution:
 
@@ -72,7 +72,7 @@ So after confirming these properties capture different behaviours, points from e
   </iframe>
 </div>
 
-The observed distribution that is not just skewed but structurally unequal proves the users preferential attachment towards some articles. Showing that just raw popularity is not informative for ranking quality. This proves the reason why a normalisation using a logarithmic transformation is necessary in creating a meaningful global score metric.
+The observed distribution that is not just skewed but structurally unequal proves the users preferential attachment towards some articles. Showing that just raw popularity is not informative for ranking quality. This further validates the necessity of a logarithmic transformation for normalisation to be able to later create a meaningful global score metric.
 
 ---
 
