@@ -126,8 +126,16 @@ We can first have a look at the best hubs ranked by efficiency amongst all the a
   </iframe>
 </div>
 
+**Efficiency is not about Fame**
 
-Here is an efficiency-success analysis : 
+One interesting result is that many of the most efficient hubs are **not very famous pages**. Some of them are quite niche and do not appear often in popularity rankings, yet they still help players navigate much better than expected.
+
+This shows that efficiency measures something **different from popularity and versatility**. A page can be well known and widely visited, but still slow players down or send them in the wrong direction. On the other hand, some less popular pages give clear guidance, avoid dead ends, and help players reach their goal faster.
+
+By including efficiency in the final score, we reward pages for being *useful*, not just famous. This allows smaller or more specialized pages to stand out when they play an important role in navigation. It confirms that good hubs are not only those everyone knows, but also those that quietly help users move in the right direction.
+
+
+Then we can deep more into the efficiencyy-success relation.
 
 <div style="width:100%;">
   <iframe
