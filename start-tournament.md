@@ -11,6 +11,11 @@ Below are the final standings of the group stage.
 <!-- Placeholder: Group-stage result tables (normalized scores only) -->
 ![Group Stage Results](images/group_stage_results.png)
 
+After the group stage, a clear picture emerges: this tournament is dominated by **countries**.
+
+This dominance is not only about fame. Countries benefit from being connected to **many different topics at once**: history, politics, culture, economy, science, and geography. Over a group stage, that breadth matters more than momentary popularity.
+
+There are, however, a few results that raise eyebrows. In Group 1, Barack Obama finishes last despite his global recognition, showing that individual leaders can be overshadowed when surrounded by broader historical and cultural hubs. In Group 5, Turkey surprisingly finishes ahead of Google and Elvis Presley. Group 6 is also striking: New York City tops a group packed with extremely strong names, including Adolf Hitler and Wikipedia, a urban hub can be a good Wikipedia hub too.
 
 ---
 
@@ -18,12 +23,27 @@ Below are the final standings of the group stage.
 
 Finishing outside first place does not mean elimination.
 
-Hubs ranked **2nd, 3rd, and 4th** in their respective groups enter the **Repechage** 
+Hubs ranked **2nd, 3rd, and 4th** in their respective groups enter the **Repechage**. 
 
-By the end of the repechage, the remaining contenders will go through to go into the **Round of 16**.
+By the end of the repechage, the remaining contenders will go through to go into the **Round of 16**, but this is the last chance for these contenders to survive in the competition.
 
 <!-- Placeholder: Repechage results table or diagram -->
 ![Repechage](images/repechage.png)
+
+**Second chances change the story**
+
+London, as a global city, qualifies with authority.
+
+The Periodic Table advances as the backbone of science itself, trying to carry and survive as the last scientific topic hub.
+
+The Beatles survive a very tight battle against Adolf Hitler, maybe they would have been the best solution in World War II.
+
+Paul McCartney qualifies on his own, confirming that an artist can stand tall even without the band behind him.
+
+Albert Einstein, reminds everyone that his ideas that changed how we see the universe can be better than nations, he dominates his playoff.
+
+Germany and Russia moves on calmly. Same for France that edges past its rivals, reinforcing the idea that real-world history and state power still matter more than fictional fame.
+
 We hope your contender went through and managed to qualify for the knockout stages !
 
 ---

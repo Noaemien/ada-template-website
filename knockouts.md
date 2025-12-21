@@ -15,15 +15,15 @@ In each match, hubs are evaluated head-to-head using the tournament scoring syst
 
 **The bracket starts normal… then London drops a bomb**
 
-Most top seeds do their job early: **United_States (1)** and **United_Kingdom (2)** both advance, and **New York City (4)** also holds. However, something drastic happens to **China (3)**. 
+Big favorites like **United_States (1)** and **United_Kingdom (2)** do their job, and strong hubs such as **New_York_City (4)** and **South_Africa (5)** also move on without drama. At first, the bracket looks calm and predictable.
 
-The Round of 16 has two upsets.
+But then the surprises hit.
 
 The first upset is **Germany (9)** beating **Turkey (8)**.  
-This one is less extreme than China’s loss, but it matters a lot because it plants a dangerous underdog into the top half of the bracket.
+It is not a huge shock on paper, but it matters a lot. Germany is a structured and resilient hub, and this win quietly places a dangerous underdog into the top half of the bracket.
 
-The biggest shock is **London (14)** knocking out **China (3)**.  
-That’s not a small slip, it’s a massive seeding upset (14 over 3), and it instantly breaks the expectation that a top-4 seed cruises into the late rounds.
+The real explosion comes with **London (14)** eliminating **China (3)**.  
+This is a massive upset : a very low seed knocking out one of the tournament’s biggest favorites. A global city outplaying a global power instantly changes the balance of the bracket and sends a clear message: being a huge country does not mean you are safe.
 
 Let's have a closer look to the biggest upset of this stage :
 
@@ -81,7 +81,7 @@ But the metrics tell a very different story.
 
 **South Africa dominates in every field.** 
 
-This is not a “lucky” upset. South Africa’s win is structurally justified by every metric, making this one of those results where the seeding underestimates a genuinely strong competitor.
+This is not a “lucky” upset. South Africa’s win is justified by every metric, making this one of those results where the seeding underestimates a strong competitor.
 
 The scores have decided! Here is how the bracket looks before we head to the semi-finals.
 
@@ -107,6 +107,10 @@ By the semifinals, the bracket shows a classic pattern: the best seeds tend to r
 **United_States (1)** beats **South_Africa (5)**.  
 South Africa had a solid, consistent run, and we saw how impressive its previous match was, but the #1 seed ends the story.
 
+![Match analysis](images/matchup_USA_vs_South_Africa.png)
+
+The domination is clear and USA just smash their opponent even if South Africa showed a good resistence in Efficiency.
+
 Then there’s the other matchup: **United_Kingdom (2) vs Japan (6)**.  
 We saw Japan manage to shut down an underdog, but how will it fair against a truely strong opponent. This by all means should be a close matchup, let's display the statistics!
 
@@ -117,10 +121,10 @@ And these are the most dramatic results we've seen! The **United Kingdom** compl
 Against the United Kingdom, Japan actually performs **slightly better in Efficiency (50.57% vs 49.43%)**. This is a surprising result: the UK is a top-2 seed, yet Japan appears to have a slightly tighter or more optimally connected local structure. This suggests Japan’s internal link density or hub compactness is genuinely strong.
 However, the match is decided elsewhere.
 
-The UK dominates **Popularity (68.16% vs 31.84%)**, an overwhelming gap that Japan cannot compensate for.  
+The UK dominates **Popularity (68.16% vs 31.84%)**, a gap that Japan cannot compensate.  
 On top of that, the UK also leads in **Versatility (55.49% vs 44.51%)**, neutralizing the other dimension that helped Japan reach this round.
 
-Japan hits a structural ceiling. It can outperform strong but less effcient hubs (like NYC), but once faced with a hub that combines good effciency, breadth *and* massive popularity, its path ends.
+Japan hits a structural ceiling. It can outperform strong but less effcient hubs (like NYC), but once faced with a more balanced hub, its path ends.
 
 Let's have a final look at the bracket before moving on to the final :
 

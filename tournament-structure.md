@@ -33,7 +33,7 @@ It works in several stages, each increasing in selectivity:
 
 - **Repechage (Second Chance)**  
     Hubs ranked **2nd, 3rd, and 4th** in their groups are not eliminated yet.  
-    They enter a *loser bracket* and are given a last chance. Only **8 hubs will survive** from this mini-league and earns their ticket to the **Round of 16**.
+    They enter a *loser group stage* and are given a last chance in groups of 3. Only **8 hubs will survive** from these mini-leagues and earns their ticket to the **Round of 16**.
 
 - **Knockout Phase**  
     From this point, there are **no second chances**.  
@@ -53,7 +53,6 @@ It works in several stages, each increasing in selectivity:
 Hubs do not compete based on a single statistic.
 
 Instead, each competitor is evaluated using a **composite score** that captures three main aspects of navigation quality. 
-At this stage of the tournament, the precise ranking formula is intentionally left open. What matters here is **what is being measured**, not yet **how everything is combined**.
 
 ---
 
@@ -153,6 +152,20 @@ Let's have a look at our groups :
 ## Group Draw
 
 ![Group Stage Draw](images/group_stage.png)
+
+The group stage draw immediately adds tension, not because of results, but because of *who* is placed together.
+
+Group 6 is one of the craziest. **Adolf Hitler** and **Alexander the Great** are in the same group, which feels like a direct matchup between two conquerors from completely different eras. One represents ancient empire-building, the other modern total war. 
+
+Group 1 has a strange and almost ironic tension. **Barack Obama** is placed in the same group as the **United States**. It feels like a leader competing against the country he once represented. In the same group, cultural giants like **The Beatles** and historical empires like the **Ottoman Empire** make it a battle between culture, leadership, and long-term history.
+
+Group 3 feels like a classic European power struggle. **United Kingdom**, **Germany**, and the **Soviet Union** are all together, instantly recalling World War II and the Cold War. Adding figures like **John F. Kennedy** and **Jimmy Carter** reinforces the idea of global politics and superpower tension, making this group feel like a diplomatic battlefield.
+
+Group 4 is built around global conflict and consequences. **China** and **Russia** share the group, two countries linked by borders, alliances, and rivalries. The presence of the **Vietnam War** and the **Chernobyl disaster** makes the group feel heavy, focused on warand crisis.
+
+Group 8 also carries strong historical weight. **Japan** appears alongside **World War II**, a direct reminder of its central role in the conflict, while **London** connects to the European side of the same war. It feels like different fronts of the same global event placed into one group.
+
+Across the draw, a clear trend appears: many groups mix **countries with the people, wars, or ideas that defined them**. Leaders face their own nations, conquerors face conquerors, and modern hubs face ancient power. Before the tournament even starts, the draw already tells stories.
 
 # The Start of the Tournament
 

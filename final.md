@@ -7,9 +7,16 @@ title: The Grand Final
 
 After weeks of competition, countless matchups, and relentless eliminations, the World Cup of Hubs reaches its final moment.
 
-Two hubs remain : United_States VS United_Kingdom
+Two hubs remain:  
+[United States](https://en.wikipedia.org/wiki/United_States) vs [United Kingdom](https://en.wikipedia.org/wiki/United_Kingdom)
 
-Both have survived the group stage, the repechage or direct qualification, and three knockout rounds. Each followed a different path, faced different opponents, and proved its strength under pressure.
+Both have survived the group stage and three knockout rounds. Each followed a different path, faced different opponents, and proved its strength under pressure.
+
+On their way to the final, the **United States** had to overcome a mix of artist and strong national challengers, including **Paul McCartney**, **Germany**, and **South Africa**.
+
+The **United Kingdom**, on the other hand, eliminated a combination of scientific conceptand countries, knocking out the **Periodic Table**, **Israel**, and **Japan**.
+
+Before revealing the outcome, we invite you to pause for a moment. Open the two pages, scroll through them, and trust your intuition. Which one *feels* more central, more connected, more influential? Sometimes, the winner can already be guessed by simply looking at the hubs themselves.
 
 ---
 
@@ -53,13 +60,8 @@ The tournament concludes with a final ranking of the top competitors.
 
 **Top 1 : United States**  
 **Top 2 : United Kingdom**  
-**Top 4 : South Africa**
-**Top 4 : Japan**  
-**Top 8 : Israel**  
-**Top 8 : London**
-**Top 8 : Germany**  
-**Top 8 : New York City**  
-
+**Top 4 : South Africa, Japan**
+**Top 8 : Israel, London, Germany, New York City**  
 ---
 
 ## Looking Back at the Tournament : Which betting strategy was the best ?
