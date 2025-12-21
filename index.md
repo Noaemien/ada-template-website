@@ -28,18 +28,18 @@ From thousands of articles appearing in Wikispeedia games, only the strongest hu
 - A **knockout phase**, with no second chances  
 - A **final**, crowning the ultimate navigation champion  
 
-To decide who advances, each hub is evaluated using three main metrics :
+To decide who advances, each hub is evaluated using three main metrics:
 
-- **Efficiency** : does visiting this page help players reach their target faster, or does it slow them down?  
-- **Versatility** : how many different topics and destinations does this page connect?  
-- **Popularity** : how often is this page actually used in successful navigation paths?  
+- **Efficiency**: does visiting this page help players reach their target faster, or does it slow them down?  
+- **Versatility**: how many different topics and destinations does this page connect?  
+- **Popularity**: how often is this page actually used in successful navigation paths?  
 
-We aggregate them to then have a final scoree. Hubs will be compared locally at each stage of the tournament to keep fair matchups and especially to keep the suspense, it would be too easy to reveal the winner already !
+We aggregate them into a final score. Hubs are compared locally at each stage of the tournament to keep matchups fair and, especially, to keep the suspense—it would be too easy to reveal the winner already!
 
-For now, the game is on. Let's go meet our competitors !
+For now, the game is on. Let's go meet our competitors!
 
 <div class="change-page-button-wrapper">
   <a href="/ada-template-website/competitors" class="change-page-button">
-    Go to next chapter : The Competitiors
+    Go to next chapter : The Competitors
   </a>
 </div>

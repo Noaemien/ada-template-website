@@ -12,9 +12,9 @@ Two hubs remain:
 
 Both have survived the group stage and three knockout rounds. Each followed a different path, faced different opponents, and proved its strength under pressure.
 
-On their way to the final, the **United States** had to overcome a mix of artist and strong national challengers, including **Paul McCartney**, **Germany**, and **South Africa**.
+On their way to the final, the **United States** had to overcome a mix of artists and strong national challengers, including **Paul McCartney**, **Germany**, and **South Africa**.
 
-The **United Kingdom**, on the other hand, eliminated a combination of scientific conceptand countries, knocking out the **Periodic Table**, **Israel**, and **Japan**.
+The **United Kingdom**, on the other hand, eliminated a combination of scientific concepts and countries, knocking out the **Periodic Table**, **Israel**, and **Japan**.
 
 Before revealing the outcome, we invite you to pause for a moment. Open the two pages, scroll through them, and trust your intuition. Which one *feels* more central, more connected, more influential? Sometimes, the winner can already be guessed by simply looking at the hubs themselves.
 
@@ -28,21 +28,21 @@ The two hubs are evaluated head-to-head using the same scoring framework as in p
 
 Let's reveal the results metric by metric. 
 
-**Efficiency** is something we saw the UK struggle with in it's match against Japan. How does it fair against the USA here.
+**Efficiency** is something we saw the UK struggle with in its match against Japan. How does it fare against the USA here?
 
 ![Match analysis](images/UK_vs_USA_eff.png)
 
-As you can see it's a very, **very** close match. Both seem to be on equal standings regarding how quickly they lead to victory in the Wikispedia games.
+As you can see it's a very, **very** close match. Both seem to be on equal footing regarding how quickly they lead to victory in the Wikispeedia game.
 
-Now let's look at **Versatility**. The UK was much more versatile than Japan before, it is going to manage to win this metric over the USA?
+Now let's look at **Versatility**. The UK was much more versatile than Japan before—will it manage to win this metric over the USA?
 
 ![Match analysis](images/UK_vs_USA_ver.png)
 
-Once again a terribly close call but the USA maanges to pull ahead here! So far this match has proven to be extremely close! But one hub must make it out on top. Will popularity clear up the winner? We saw how much more popualr the UK was before with Japan. This could be a chance for the UK to secure the victory! Let's look at this final metric :
+Once again, a terribly close call, but the USA manages to pull ahead here! So far this match has proven to be extremely close! But one hub must make it out on top. Will popularity clear up the winner? We saw how much more popular the UK was previously against Japan. This could be a chance for the UK to secure the victory! Let's look at this final metric:
 
 ![Match analysis](images/UK_vs_USA_pop.png)
 
-USA complelty slams the door on the UK with popularity. It proves it is the dominent Hub by winning over the UK (which was already a very promising hub) in all three metrics. USA has it all, it helps reach the end goal faster, it has a wide breadth of connections and it is immensely popular. Here is the final score :
+The USA completely slams the door on the UK with popularity. It proves it is the dominant hub by winning over the UK (which was already a very promising hub) in all three metrics. The USA has it all: it helps reach the end goal faster, it has a wide breadth of connections, and it is immensely popular. Here is the final score:
 
 ![Match analysis](images/UK_vs_USA_final.png)
 
@@ -51,8 +51,6 @@ USA complelty slams the door on the UK with popularity. It proves it is the domi
 ![Champion](images/champion.png)
 
 This hub is crowned the **World Cup of Wikipedia Hubs champion**.
-
-<!-- Placeholder: Champion highlight figure or celebratory graphic -->
 
 ---
 
@@ -70,9 +68,9 @@ The tournament concludes with a final ranking of the top competitors.
 
 ---
 
-## Looking Back at the Tournament : Which betting strategy was the best ?
+## Looking Back at the Tournament : Which betting strategy was the best?
 
-Now the part you have been waiting for : Did you win some money ?
+Now the part you have been waiting for: did you win some money?
 
 We always assume players have 80 $ and bet 10 $ on each of 8 articles.
 
@@ -82,7 +80,7 @@ We always assume players have 80 $ and bet 10 $ on each of 8 articles.
 
 ![Graph of the wikipedia network based on beetweenness centrality measure](images/graph_wikipedia.png)
 
-If someone simply follows the odds given by the bookmakers on the real competition, they would win on:
+If someone simply follows the best odds given by the bookmakers on the real competition, they would win on:
 
 | Article        | Odd  | Result |
 |----------------|------|--------|
@@ -111,7 +109,7 @@ If someone predicted the 8 best hubs:
  
   **United States, Japan, South Africa, United Kingdom, Israel, London, Germany, New York City**
 
-The return from the 7 bettable winners would be:
+The return from the 8 winners would be:
 
 - `10 × (1.00 + 7.44 + 10.63 + 3.36 + 11.53 + 7.61 + 5.75 + 11.08) = 584 $`
 
@@ -119,15 +117,16 @@ Profit:
 
 - `584 $ − 80 $ = 504 $`
 
-Note to mention that some hubs ranked high in the competition (Albert Einstein or Periodic Table were in Top 16) but were not even proposed by the bookmakers. This shows that the bookmakers couldn't predict the competition perfectly and that the graph analysis alone is not sufficient enough to estimate wikispeedia's players behaviors.
-Nonetherless, all Top 8 contenders were predicted as in the Top 64 by the bookmakers showing that their graph analysis was efficient enough. In addition, Underdogs that are not proposed in the betting area is part of the game of betting, bookmakers cannot predict the future and and that's also one way how they make money themselve.
+Not to mention that some hubs ranked high in the competition (Albert Einstein or Periodic Table were in Top 16) but were not even proposed by the bookmakers. This shows that the bookmakers could not predict the competition perfectly and that graph analysis alone is not sufficient to estimate Wikispeedia players’ behaviors.
+
+Nonetheless, all Top 8 contenders were predicted as being in the Top 64 by the bookmakers, showing that their graph analysis was efficient enough. In addition, underdogs that are not proposed in the betting area are part of the game of betting: bookmakers cannot predict the future, and that's also one way how they make money themselves.
 
 ---
 
 #### Strategy 3 – Use global popularity
 
 Picking the top 8 most popular pages on Wikipedia over the last 10 years.  
-We realize that these are **not** the same as the nodes favored by the Wikipedia link architecture, so the overlap with the bookmaker’s list is limited (see Strategy 2): Indeed, we need to go up to the 15th most visited page of Wikipedia to find 8 articles that are also porposed by the bookmakers.
+We realize that these are **not** the same as the nodes favored by the Wikipedia link architecture, so the overlap with the bookmaker’s list is limited (see Strategy 1). Indeed, we need to go up to the 15th most visited page of Wikipedia to find 8 articles that are also proposed by the bookmakers.
 
 | Rank | Top article by popularity on the real world wikipedia | Selected in strategy | Result |
 |------|-------------------------------------------------------|----------------------|--------|
@@ -147,7 +146,6 @@ We realize that these are **not** the same as the nodes favored by the Wikipedia
 | 14   | Canada                                                | X                    |        |
 | 15   | Australia                                             | X                    |        |
 
-
 Total return:
 
 - `10 × (1.00 + 3.36) = 43.60 $`
@@ -156,23 +154,23 @@ Profit:
 
 - `43.60 $ − 80 $ = -36.4 $`
 
-This strategy performs pretty badly. It shows that using **page popularity** can is not reliable for predicting players’ behavior. Relying only on the **graph architecture** like in Strategy 1, seems to be slightly better.
+This strategy performs pretty badly. It shows that using **page popularity** is not reliable for predicting players’ behavior. Relying only on the **graph architecture** like in Strategy 1 seems to be slightly better.
 
 ---
 
-#### Strategy 4 : Human Intuition
+#### Strategy 4 – Human Intuition
 
 Let's see how much money our group made...
 
 | Player | Winning bets                         | Profit                                       |
 |--------|--------------------------------------|----------------------------------------------|
-| Noa    | London                               | - 80\$ + 7.61* 10\$ = -3.90\$                |
-| Tolga  | United_States, United_Kingdom        | -80\$ + 1* 10\$ + 3.36* 10\$ = -36.40\$      |
-| Antoine| -                                    | - 80\$ + 0\$ = -80\$                         |
-| Max    | United_States                        | -80\$ + 1* 10\$ = -70\$                      |
-| Julien | United_States                        | -80\$ + 1* 10\$ = -70\$                      |
+| Noa    | London                               | -80\$ + 7.61 × 10\$ = -3.90\$                |
+| Tolga  | United_States, United_Kingdom        | -80\$ + 1 × 10\$ + 3.36 × 10\$ = -36.40\$    |
+| Antoine| -                                    | -80\$ + 0\$ = -80\$                          |
+| Max    | United_States                        | -80\$ + 1 × 10\$ = -70\$                     |
+| Julien | United_States                        | -80\$ + 1 × 10\$ = -70\$                     |
 
-this shows that based on no serious strategy, humans perform pretty badly on this type of gamble. Did you do better ? Lets see :
+This shows that, based on no serious strategy, humans perform pretty badly on this type of gamble. Did you do better? Let's see:
 
 ---
 

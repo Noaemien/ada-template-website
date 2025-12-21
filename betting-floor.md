@@ -18,8 +18,8 @@ Another decides whether to trust them.
 
 ## The Bookmakers : Setting the Odds
 
-To do so, the bookmakers scrapped the whole wikipedia website to extract a graph architecture from it. (they unfortunately do not have access at the Wikispeedia players game data so they cannot predict perfectly the outcome of the competition)
-To estimate the importance of a node over a network, we usually use centrality measure, a central concept from network science. Bookmakers decided to mainly rely on a combination of **Betweenness** and **Katz** **centrality** measures.
+To do so, the bookmakers scraped the whole Wikipedia website to extract a graph architecture from it (they unfortunately do not have access to the Wikispeedia players’ game data, so they cannot perfectly predict the outcome of the competition).
+To estimate the importance of a node over a network, we usually use centrality measures, a central concept from network science. Bookmakers decided to mainly rely on a combination of **Betweenness** and **Katz** **centrality** measures.
 
 ### Betweenness Centrality
 
@@ -43,22 +43,22 @@ In the context of Wikispeedia, this means:
 * Recognizing pages that are "close" to a large number of other pages, even if they aren't on the absolute shortest path.
 * Accounting for the recursive influence of a node, where being linked to by other important nodes increases its own value.
 
-By utilizing Katz centrality, we could identify "hidden gems": pages that might not be the most obvious hubs but possess a high degree of connectivity to various niche clusters. This allowed them to predict which pages would serve as the most effective "launching pads" to reach obscure target topics.
+By utilizing Katz centrality, they could identify "hidden gems": pages that might not be the most obvious hubs but possess a high degree of connectivity to various niche clusters. This allowed them to predict which pages would serve as the most effective "launching pads" to reach obscure target topics.
 
 ### Visual representation
 
-For illustration, we can extract visual graphs of the **wikipedia network** architecture. Here are the 100 most important nodes using the Betweenness centrality measure.
+For illustration, we can extract visual graphs of the **Wikipedia network** architecture. Here are the 100 most important nodes using the Betweenness centrality measure.
 
 {% include_relative _plots/centrality_graph.html %}
 
 ## The Odds Board
 
-Based on those two metrics, Bookmakers will now give an odd for every Node so player can put their money on their favourite choice depending on their predictions. These odds reflect **expectations**, not outcomes.
+Based on those two metrics, bookmakers now give an odd for every node so players can put their money on their favourite choice depending on their predictions. These odds reflect **expectations**, not outcomes.
 
 ### Selective Normalization
 To account for a bookmaker's margin and filter out the "long tail" of approximately 4,000 competitors, we calculate the total market weight based only on the **Top 64** performers. 
 
-This creates in the same time an **overround** for the bookmakers and simplify the calculations: since we divide individual scores by a smaller total sum, the implied probabilities will sum to more than 100% across the entire dataset, effectively lowering the odds.
+This simultaneously creates an **overround** for the bookmakers and simplifies the calculations: since we divide individual scores by a smaller total sum, the implied probabilities will sum to more than 100% across the entire dataset, effectively lowering the odds.
 
 #### The Mathematical Model
 1. **Composite Score ($S_i$):**
@@ -73,7 +73,7 @@ This creates in the same time an **overround** for the bookmakers and simplify t
 4. **Final Bookmaker Odds ($O_i$):**
    $$O_i = \frac{1}{P'_i}$$
 
-this are the odds measured with this technique :
+These are the odds measured with this technique:
 
 | Rank | Article           | Odds      |
 |:----:|:-----------------|:---------:|
@@ -88,7 +88,7 @@ this are the odds measured with this technique :
 | 9    | London            | 45.61     |
 | 10   | English language  | 47.67     |
 
-While selective normalization establishes a bookmaker's margin, treating **Betweenness and Katz scores** as direct probabilities is mathematically flawed for 1v1 strength data. Centrality measures relative structural influence, not win frequency. To resolve this, we implement a Bradley-Terry inspired model: by applying an exponential transformation to the scores, we convert raw "ability" into "winning potential." This transition is crucial because it accounts for the non-linear nature of competition, where elite performers possess a disproportionate advantage that a simple linear model would fail to capture
+While selective normalization establishes a bookmaker's margin, treating **Betweenness and Katz scores** as direct probabilities is mathematically flawed for 1v1 strength data. Centrality measures relative structural influence, not win frequency. To resolve this, we implement a Bradley-Terry inspired model: by applying an exponential transformation to the scores, we convert raw "ability" into "winning potential." This transition is crucial because it accounts for the non-linear nature of competition, where elite performers possess a disproportionate advantage that a simple linear model would fail to capture.
 
 ## Bradley-Terry Inspired Odds Model
 Since **Betweenness** and **Katz** are measures of 1v1 strength (centrality) rather than direct win probabilities, we treat them as **Ability Scores** ($\lambda$). 
@@ -112,21 +112,22 @@ To convert these scores into betting odds for a multi-competitor field, we use a
 4. **Implied Probability and Odds:**
    $$P_i = \frac{W_i}{\Omega_{top}} \quad \text{and} \quad \text{Odds}_i = \frac{1}{P_i}$$
 
-### Problem : 
-The bookmaker doesnt know the insights of the real competition so he cannot know how to adjust β. That is why he employs a "Market Anchor" strategy. Rather than guessing the internal skill distribution (β), the model is back-calculated by forcing the top-ranked favorite’s winning odds to exactly 8.00. By then dividing all odds by eight to create a "Top 8" market, the favorite is naturally positioned at 1.00 (100% implied probability). This approach effectively standardizes the risk profile: it treats the structural leader as a certainty for the Top 8 while allowing the exponential scaling to dictate the decreasing probabilities for the rest of the field in a mathematically consistent way.
-In addition, trying to guess the top8 is deffinitely funnier for the gamblers !
+### Problem :
+The bookmaker doesn’t know the insights of the real competition, so he cannot know how to adjust β. That is why he employs a "Market Anchor" strategy. Rather than guessing the internal skill distribution (β), the model is back-calculated by forcing the top-ranked favorite’s winning odds to exactly 8.00. By then dividing all odds by eight to create a "Top 8" market, the favorite is naturally positioned at 1.00 (100% implied probability). This approach effectively standardizes the risk profile: it treats the structural leader as a certainty for the Top 8 while allowing the exponential scaling to dictate the decreasing probabilities for the rest of the field in a mathematically consistent way.
+
+In addition, trying to guess the Top 8 is definitely more fun for the gamblers!
 
 # Betting area
 
 Now you step onto the betting floor.
 
 As a **gambler**, you only have access to public information:  
-what you know, what your intuition suggest you, and what the odds suggest.
+what you know, what your intuition suggests to you, and what the odds suggest.
 
 Will you trust global fame?  
-Or will you go for a promising outsider and go against the bookmakers ?  
+Or will you go for a promising outsider and go against the bookmakers?  
 
-<p>Select your own favourite hub 8 articles: (you have 80\$ and must bet 10\$ on each article you think will be in the top 8 of the world cup of hubs)</p>
+<p>Select your own favourite 8 hub articles: (you have 80\$ and must bet 10\$ on each article you think will be in the top 8 of the World Cup of Hubs)</p>
 
 <div class="container" id="optionsContainer"></div>
 <button onclick="saveSelection()">Save</button>
@@ -341,31 +342,29 @@ We always assume you have `80$` and bet `10$` on each of 8 articles.
 
 #### Strategy 1 : Follow the bookmakers
 
-If someone simply follows the odds given by the bookmakers on the real competition ?
+If someone simply follows the odds given by the bookmakers on the real competition?
 
 #### Strategy 2 : Perfectly predict the Top 8 hubs
 
-If someone predicted the 8 best hubs How much money could he win ?
+If someone predicted the 8 best hubs, how much money could they win?
 
 #### Strategy 3 : Use global popularity
 
-Now consider a different idea: pick the top 8 most popular pages on Wikipedia over the last 10 years. How do you think this would perform ?
+Now consider a different idea: pick the top 8 most popular pages on Wikipedia over the last 10 years. How do you think this would perform?
 
 #### Strategy 4 : Human Intuition
 
-Our group also tried to find their own guess before looking at this project:
+Our group also tried to make their own guesses before looking at this project:
 
-**Noa** : Spain, Austalia, Portugal, Italy, Earth, London, Islam, Latin 
-**Tolga** : United_states, England, China, World_war_I, Earth, United_kindgom, Europe, Turkey
-**Antoine**: Bird, 20th century, English language, World War II, United Nations, list of countries by system of government, animal, scientific classification
-**Max**: United States, England, World War II, English language, Animal, 20th century, Agriculture, Water
-**Julien**: United States, 20th century, England, agriculture, World War II, Christianity, North America, People’s Republic of China
-
-<!-- Placeholder: Everybody explain why they chose these hub ??-->
+**Noa** : Spain, Australia, Portugal, Italy, Earth, London, Islam, Latin  
+**Tolga** : United_States, England, China, World_War_I, Earth, United_Kingdom, Europe, Turkey  
+**Antoine** : Bird, 20th_century, English_language, World_War_II, United_Nations, List_of_countries_by_system_of_government, Animal, Scientific_classification  
+**Max** : United_States, England, World_War_II, English_language, Animal, 20th_century, Agriculture, Water  
+**Julien** : United_States, 20th_century, England, Agriculture, World_War_II, Christianity, North_America, People's_Republic_of_China
 
 #### Strategy 5 : YOUR Prediction
 
-We will track how YOUR pick perform and see whether human intuition can keep up with the data.
+We will track how YOUR pick performs and see whether human intuition can keep up with the data.
 
 ---
 
@@ -374,7 +373,7 @@ We will look back at those strategies at the end of the competition and see whic
 
 ## The Tournament Is About to Begin
 
-With bets placed and expectations set, it is time to know the rules of the competition and the strucutre of the competion before letting the hubs fight.
+With bets placed and expectations set, it is time to know the rules of the competition and the structure of the competition before letting the hubs fight.
 
 **Discover how the World Cup of Hubs is designed.**  
 
