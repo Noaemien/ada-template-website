@@ -39,6 +39,8 @@ The **United Kingdom**, on the other hand, eliminated a combination of scientifi
 
 Before revealing the outcome, we invite you to pause for a moment. Open the two pages, scroll through them, and trust your intuition. Which one *feels* more central, more connected, more influential? Sometimes, the winner can already be guessed by simply looking at the hubs themselves.
 
+**Click on the names and make your own prediction seeing the pages of the finalists !**
+
 ---
 
 ## The Final Match, And the Champion Is…
