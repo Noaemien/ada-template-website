@@ -38,5 +38,8 @@ We aggregate them to then have a final scoree. Hubs will be compared locally at 
 
 For now, the game is on. Let's go meet our competitors !
 
-[Go to next chapter : The Competitiors](/ada-template-website/competitors)
-
+<div class="change-page-button-wrapper">
+  <a href="/ada-template-website/competitors" class="change-page-button">
+    Go to next chapter : The Competitiors
+  </a>
+</div>

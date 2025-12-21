@@ -268,3 +268,29 @@ footer {
     color:#444;
   }
 }
+
+.change.page-button-wrapper {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.change-page-button {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  border-radius: 10px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.change-page-button:hover {
+  background-color: #005fcc;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+}
+
+.change-page-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}

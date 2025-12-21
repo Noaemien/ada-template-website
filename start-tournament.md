@@ -103,5 +103,9 @@ There are no more second chances.
 From here on, every match is a direct duel : win and advance, or lose and go home.
 
 **The Round of 16 and the road to the Granf Final.**  
-[Go to next chapter : The Knockout Phase](/ada-template-website/knockouts)
 
+<div class="change-page-button-wrapper">
+  <a href="/ada-template-website/knockouts" class="change-page-button">
+    Go to next chapter : The Knockout Phase
+  </a>
+</div>

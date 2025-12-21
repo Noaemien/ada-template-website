@@ -143,4 +143,9 @@ Each followed a different path through the tournament, overcame different challe
 One last match stands between them and the trophy. A match between two powerhouses of the hub community. Who do *you* think will win? 
 
 **Next: the Grand Final.**  
-[Go to next chapter : The Grand Final](/ada-template-website/final)
+
+<div class="change-page-button-wrapper">
+  <a href="/ada-template-website/final" class="change-page-button">
+    Go to next chapter : The Grand Final
+  </a>
+</div>

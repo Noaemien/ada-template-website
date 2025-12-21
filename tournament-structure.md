@@ -179,4 +179,9 @@ Only performance within the group does.
 It is time to kick off the **World Cup of Hubs**.
 
 **The World Cup of Hubs kicks off !**  
-[Go to next chapter : Start of the Tournament](/ada-template-website/start-tournament)
+
+<div class="change-page-button-wrapper">
+  <a href="/ada-template-website/start-tournament" class="change-page-button">
+    Go to next chapter : Start of the Tournament
+  </a>
+</div>

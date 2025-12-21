@@ -382,4 +382,9 @@ We will also track how YOUR pick perform and see whether human intuition can kee
 With bets placed and expectations set, it is time to know the rules of the competition and the strucutre of the competion before letting the hubs fight.
 
 **Discover how the World Cup of Hubs is designed.**  
-[Go to next chapter : Structure of the Tournament](/ada-template-website/tournament-structure)
+
+<div class="change-page-button-wrapper">
+  <a href="/ada-template-website/tournament-structure" class="change-page-button">
+    Go to next chapter : Structure of the Tournament
+  </a>
+</div>

@@ -240,4 +240,9 @@ Below you can see the 8 contenders you selected on the betting floor and how the
 With the champion crowned, it is time to step back and analyze what truly determined success.
 
 **Dive into the data and understand the results.**  
-[Go to next chapter : Further Analysis](/ada-template-website/analysis)
+
+<div class="change-page-button-wrapper">
+  <a href="/ada-template-website/analysis" class="change-page-button">
+    Go to next chapter : Further Analysis
+  </a>
+</div>

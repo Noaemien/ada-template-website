@@ -185,10 +185,9 @@ In the end, the sharks didn’t just predict the winner : they predicted the *ty
 
 **Thank you for following us through our World Cup of Hubs ! We hope you enjoyed it !**
 
-[Back to the menu](/ada-template-website/index)
-
-<div class="back-menu-wrapper">
+<div class="change-page-button-wrapper">
   <a href="/ada-template-website/index" class="change-page-button">
     Back to the menu
   </a>
 </div>
+
