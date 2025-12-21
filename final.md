@@ -29,7 +29,7 @@ Two hubs remain:
   </a>
 </div>
 
-
+**Click on the names above and make your own prediction going through the Wikipedia the pages of the finalists !**
 
 Both have survived the group stage and three knockout rounds. Each followed a different path, faced different opponents, and proved its strength under pressure.
 
@@ -38,8 +38,6 @@ On their way to the final, the **United States** had to overcome a mix of artist
 The **United Kingdom**, on the other hand, eliminated a combination of scientific concepts and countries, knocking out the **Periodic Table**, **Israel**, and **Japan**.
 
 Before revealing the outcome, we invite you to pause for a moment. Open the two pages, scroll through them, and trust your intuition. Which one *feels* more central, more connected, more influential? Sometimes, the winner can already be guessed by simply looking at the hubs themselves.
-
-**Click on the names and make your own prediction seeing the pages of the finalists !**
 
 ---
 

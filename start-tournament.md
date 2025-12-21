@@ -52,7 +52,7 @@ Albert Einstein reminds everyone that the ideas that changed how we see the univ
 
 Germany and Russia move on calmly. Same for France, which edges past its rivals, reinforcing the idea that real-world history and state power still matter more than fictional fame.
 
-We hope your contender went through and managed to qualify for the knockout stages!
+We hope your bets went through and managed to qualify for the knockout stages!
 
 ---
 
