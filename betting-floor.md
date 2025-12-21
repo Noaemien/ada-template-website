@@ -320,11 +320,24 @@ function saveSelection() {
 
 </script>
 
+<!-- MathJax loader to render LaTeX formulas on this page -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true
+    }
+  };
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 ---
 
 ### Now, let's see some betting strategies example
 
-We always assume you have 80\$ and bet 10\$ on each of 8 articles.
+We always assume you have 80 \$ and bet 10 \$ on each of 8 articles.
 
 #### Strategy 1 : Follow the bookmakers
 
@@ -348,7 +361,7 @@ Our group also tried to find their own guess before looking at this project:
 
 **Antoine**: Bird, 20th century, English language, World War II, United Nations, list of countries by system of government, animal, scientific classification
 
-**Max**: United States, Australia, World War II, France, Brazil, currency, water, scientific classification
+**Max**: United States, England, World War II, English language, Animal, 20th century, Agriculture, Water
 
 **Julien**: United States, 20th century, England, agriculture, World War II, Christianity, North America, People’s Republic of China
 
@@ -362,19 +375,6 @@ We will track how YOUR pick perform and see whether human intuition can keep up 
 
 We will look back at those strategies at the end of the competition and see which one is the best, and the worst...
 
-<!-- MathJax loader to render LaTeX formulas on this page -->
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']],
-      processEscapes: true
-    }
-  };
-</script>
-<script id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
 
 ## The Tournament Is About to Begin
 

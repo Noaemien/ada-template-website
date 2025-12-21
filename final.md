@@ -166,11 +166,11 @@ Let's see how much money our group made...
 
 | Player | Winning bets                         | Profit                                       |
 |--------|--------------------------------------|----------------------------------------------|
-| Noa    | -                                    | - 80\$ + 0\$ = - 80\$                        |
-| Tolga  | United_States, China, United_Kingdom| -80\$ + 1* 10\$ + 8.35* 10\$ + 3.36* 10\$ = 47.10\$ |
-| Antoine| -                                    | - 80\$ + 0\$ = - 80\$                        |
+| Noa    | London                               | - 80\$ + 7.61* 10\$ = -3.90\$                |
+| Tolga  | United_States, United_Kingdom        | -80\$ + 1* 10\$ + 3.36* 10\$ = -36.40\$      |
+| Antoine| -                                    | - 80\$ + 0\$ = -80\$                         |
 | Max    | United_States                        | -80\$ + 1* 10\$ = -70\$                      |
-| Julien | United_States, China                 | -80\$ + 1* 10\$ + 8.35* 10\$ = 13.5\$        |
+| Julien | United_States                        | -80\$ + 1* 10\$ = -70\$                      |
 
 this shows that based on no serious strategy, humans perform pretty badly on this type of gamble. Did you do better ? Lets see :
 
@@ -188,11 +188,11 @@ Below you can see the 8 contenders you selected on the betting floor and how the
     "United_States",
     "United_Kingdom",
     "South_Africa",
+    "Japan",
     "Germany",
     "Israel",
-    "Adolf_Hitler",
-    "Russia",
-    "China"
+    "London",
+    "New_York_City"
   ];
 
   const summaryEl = document.getElementById("yourBetSummary");
