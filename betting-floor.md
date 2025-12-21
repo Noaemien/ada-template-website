@@ -337,7 +337,7 @@ function saveSelection() {
 
 ### Now, let's see some betting strategies example
 
-We always assume you have 80 \$ and bet 10 \$ on each of 8 articles.
+We always assume you have `80$` and bet `10$` on each of 8 articles.
 
 #### Strategy 1 : Follow the bookmakers
 
@@ -356,16 +356,12 @@ Now consider a different idea: pick the top 8 most popular pages on Wikipedia ov
 Our group also tried to find their own guess before looking at this project:
 
 **Noa** : Spain, Austalia, Portugal, Italy, Earth, London, Islam, Latin 
-
 **Tolga** : United_states, England, China, World_war_I, Earth, United_kindgom, Europe, Turkey
-
 **Antoine**: Bird, 20th century, English language, World War II, United Nations, list of countries by system of government, animal, scientific classification
-
 **Max**: United States, England, World War II, English language, Animal, 20th century, Agriculture, Water
-
 **Julien**: United States, 20th century, England, agriculture, World War II, Christianity, North America, People’s Republic of China
 
-<!-- Placeholder: Everybody explain why they chose there hub ??-->
+<!-- Placeholder: Everybody explain why they chose these hub ??-->
 
 #### Strategy 5 : YOUR Prediction
 
