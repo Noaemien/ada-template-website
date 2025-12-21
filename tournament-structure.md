@@ -84,7 +84,7 @@ Each of these metrics highlights a different aspect of what makes a **good hub**
 To decide match outcomes, the three dimensions are combined into a **single score** for each hub. This score acts as the referee’s decision: it determines which hub performs better in a given competitive context.
 
 So do not forget:  
-The odds were based only on the famousness of the pages across the years, but the referee does not care if the hub is famous; he wants the most powerful hub for his Wikispeedia games.
+The odds were based only on the wikipedia network, but the referee does not care if the hub is famous; he wants the most powerful hub for his Wikispeedia games.
 
 We might see some surprising favorite upsets and maybe some crazy underdog stories!
 

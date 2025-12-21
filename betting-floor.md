@@ -31,7 +31,7 @@ In the context of Wikispeedia, this reflects:
 * How frequently it bridges otherwise unrelated navigation paths.
 * The extent to which a page is difficult to bypass when trying to reach a destination efficiently.
 
-By ranking pages according to betweenness centrality, these gamblers were able to isolate structurally critical hubs long before the tournament began, identifying the "bridges" that players are almost forced to cross.
+By ranking pages according to betweenness centrality, we are able to isolate structurally critical hubs identifying the "bridges" that players are almost forced to cross.
 
 ### Katz Centrality
 
@@ -43,7 +43,7 @@ In the context of Wikispeedia, this means:
 * Recognizing pages that are "close" to a large number of other pages, even if they aren't on the absolute shortest path.
 * Accounting for the recursive influence of a node, where being linked to by other important nodes increases its own value.
 
-By utilizing Katz centrality, they could identify "hidden gems": pages that might not be the most obvious hubs but possess a high degree of connectivity to various niche clusters. This allowed them to predict which pages would serve as the most effective "launching pads" to reach obscure target topics.
+By utilizing Katz centrality, they could identify "hidden gems": pages that might not be the most obvious hubs but possess a high degree of connectivity to various niche clusters. This allow to predict which pages would serve as the most effective "launching pads" to reach obscure target topics.
 
 ### Visual representation
 
@@ -75,20 +75,20 @@ This simultaneously creates an **overround** for the bookmakers and simplifies t
 
 These are the odds measured with this technique:
 
-| Rank | Article           | Odds      |
-|:----:|:-----------------|:---------:|
-| 1    | United States     | 7.11      |
-| 2    | United Kingdom    | 15.79     |
-| 3    | England           | 20.65     |
-| 4    | Europe            | 24.80     |
-| 5    | Africa            | 27.65     |
-| 6    | Germany           | 34.48     |
-| 7    | World War II      | 43.18     |
-| 8    | 19th century      | 45.15     |
-| 9    | London            | 45.61     |
-| 10   | English language  | 47.67     |
+| Rank | Article           | Odds      | Betweenness | Katz     |
+|:----:|:-----------------|:---------:|:-----------:|:--------:|
+| 1    | United States     | 7.11      | 1.000000    | 1.000000 |
+| 2    | United Kingdom    | 15.79     | 0.450465    | 0.669473 |
+| 3    | England           | 20.65     | 0.344380    | 0.472381 |
+| 4    | Europe            | 24.80     | 0.286870    | 0.646332 |
+| 5    | Africa            | 27.65     | 0.257244    | 0.329054 |
+| 6    | Germany           | 34.48     | 0.206276    | 0.522925 |
+| 7    | World War II      | 43.18     | 0.164731    | 0.525182 |
+| 8    | 19th century      | 45.15     | 0.157549    | 0.196988 |
+| 9    | London            | 45.61     | 0.155971    | 0.368651 |
+| 10   | English language  | 47.67     | 0.149230    | 0.435025 |
 
-While selective normalization establishes a bookmaker's margin, treating **Betweenness and Katz scores** as direct probabilities is mathematically flawed for 1v1 strength data. Centrality measures relative structural influence, not win frequency. To resolve this, we implement a Bradley-Terry inspired model: by applying an exponential transformation to the scores, we convert raw "ability" into "winning potential." This transition is crucial because it accounts for the non-linear nature of competition, where elite performers possess a disproportionate advantage that a simple linear model would fail to capture.
+While selective normalization establishes a bookmaker's margin, treating **Betweenness and Katz scores** as direct probabilities is mathematically flawed for 1v1 strength data. Centrality showcase relative structural influence, not win frequency. To resolve this, we implement a Bradley-Terry inspired model: by applying an exponential transformation to the scores, we convert raw "ability" into "winning potential." This transition is crucial because it accounts for the non-linear nature of competition, where elite performers possess a disproportionate advantage that a simple linear model would fail to capture.
 
 ## Bradley-Terry Inspired Odds Model
 Since **Betweenness** and **Katz** are measures of 1v1 strength (centrality) rather than direct win probabilities, we treat them as **Ability Scores** ($\lambda$). 
@@ -342,11 +342,11 @@ We always assume you have `80$` and bet `10$` on each of 8 articles.
 
 #### Strategy 1 : Follow the bookmakers
 
-If someone simply follows the odds given by the bookmakers on the real competition?
+What if someone simply follows the odds given by the bookmakers on the real competition?
 
 #### Strategy 2 : Perfectly predict the Top 8 hubs
 
-If someone predicted the 8 best hubs, how much money could they win?
+What if someone predicted the 8 best hubs, how much money could they win?
 
 #### Strategy 3 : Use global popularity
 
@@ -362,9 +362,9 @@ Our group also tried to make their own guesses before looking at this project:
 **Max** : United_States, England, World_War_II, English_language, Animal, 20th_century, Agriculture, Water  
 **Julien** : United_States, 20th_century, England, Agriculture, World_War_II, Christianity, North_America, People's_Republic_of_China
 
-#### Strategy 5 : YOUR Prediction
+#### Strategy 5 : Your Prediction
 
-We will track how YOUR pick performs and see whether human intuition can keep up with the data.
+We will track how **Your pick** performs and see whether human intuition can keep up with the data.
 
 ---
 

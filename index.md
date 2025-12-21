@@ -34,7 +34,7 @@ To decide who advances, each hub is evaluated using three main metrics:
 - **Versatility**: how many different topics and destinations does this page connect?  
 - **Popularity**: how often is this page actually used in successful navigation paths?  
 
-We aggregate them into a final score. Hubs are compared locally at each stage of the tournament to keep matchups fair and, especially, to keep the suspense—it would be too easy to reveal the winner already!
+We aggregate them into a final score. Hubs are compared locally at each stage of the tournament to keep matchups fair and, especially, to keep the suspense!
 
 For now, the game is on. Let's go meet our competitors!
 

@@ -61,7 +61,7 @@ These 16 competitors advance to the **Round of 16**, marking the beginning of th
 
 The knockout stage is not drawn at random.
 
-To reward strong performance in the group stage and preserve competitive balance, the bracket is built using a **seeding system**, similar to those used in tennis Grand Slams.
+To reward strong performance in the group stage and preserve competitive balance, the bracket is again built using a **seeding system**, similar to those used in tennis Grand Slams knockout phases.
 
 The rules are as follows:
 
