@@ -77,18 +77,20 @@ These are the odds measured with this technique:
 
 | Rank | Article           | Odds      | Betweenness | Katz     |
 |:----:|:-----------------|:---------:|:-----------:|:--------:|
-| 1    | United States     | 7.11      | 1.000000    | 1.000000 |
-| 2    | United Kingdom    | 15.79     | 0.450465    | 0.669473 |
-| 3    | England           | 20.65     | 0.344380    | 0.472381 |
-| 4    | Europe            | 24.80     | 0.286870    | 0.646332 |
-| 5    | Africa            | 27.65     | 0.257244    | 0.329054 |
-| 6    | Germany           | 34.48     | 0.206276    | 0.522925 |
-| 7    | World War II      | 43.18     | 0.164731    | 0.525182 |
-| 8    | 19th century      | 45.15     | 0.157549    | 0.196988 |
-| 9    | London            | 45.61     | 0.155971    | 0.368651 |
-| 10   | English language  | 47.67     | 0.149230    | 0.435025 |
+| 1    | United States     | 12.79     | 1.000000    | 1.000000 |
+| 2    | United Kingdom    | 22.84     | 0.450465    | 0.669473 |
+| 3    | Europe            | 27.41     | 0.286870    | 0.646332 |
+| 4    | England           | 31.32     | 0.344380    | 0.472381 |
+| 5    | France            | 32.08     | 0.127557    | 0.669898 |
+| 6    | Germany           | 35.08     | 0.206276    | 0.522925 |
+| 7    | World War II      | 37.08     | 0.164731    | 0.525182 |
+| 8    | Africa            | 43.63     | 0.257244    | 0.329054 |
+| 9    | English language  | 43.78     | 0.149230    | 0.435025 |
+| 10   | India             | 46.24     | 0.119631    | 0.433570 |
 
-While selective normalization establishes a bookmaker's margin, treating **Betweenness and Katz scores** as direct probabilities is mathematically flawed for 1v1 strength data. Centrality showcase relative structural influence, not win frequency. To resolve this, we implement a Bradley-Terry inspired model: by applying an exponential transformation to the scores, we convert raw "ability" into "winning potential." This transition is crucial because it accounts for the non-linear nature of competition, where elite performers possess a disproportionate advantage that a simple linear model would fail to capture.
+This approach is fundamentally flawed. The resulting odds are far too high; a major favorite like the United States would have odds of 12.79, leading to catastrophic losses for bookmakers. The core issue is treating **Betweenness and Katz** scores as direct probabilities. These metrics measure relative structural influence within a network rather than win frequency or intrinsic strength in a 1v1 matchup
+
+To resolve this, we implement a Bradley-Terry inspired model: by applying an exponential transformation to the scores, we convert raw "ability" into "winning potential." This transition is crucial because it accounts for the non-linear nature of competition, where elite performers possess a disproportionate advantage that a simple linear model would fail to capture.
 
 ## Bradley-Terry Inspired Odds Model
 Since **Betweenness** and **Katz** are measures of 1v1 strength (centrality) rather than direct win probabilities, we treat them as **Ability Scores** ($\lambda$). 
@@ -112,7 +114,7 @@ To convert these scores into betting odds for a multi-competitor field, we use a
 4. **Implied Probability and Odds:**
    $$P_i = \frac{W_i}{\Omega_{top}} \quad \text{and} \quad \text{Odds}_i = \frac{1}{P_i}$$
 
-### Problem :
+#### Problem :
 The bookmaker doesn’t know the insights of the real competition, so he cannot know how to adjust β. That is why he employs a "Market Anchor" strategy. Rather than guessing the internal skill distribution (β), the model is back-calculated by forcing the top-ranked favorite’s winning odds to exactly 8.00. By then dividing all odds by eight to create a "Top 8" market, the favorite is naturally positioned at 1.00 (100% implied probability). This approach effectively standardizes the risk profile: it treats the structural leader as a certainty for the Top 8 while allowing the exponential scaling to dictate the decreasing probabilities for the rest of the field in a mathematically consistent way.
 
 In addition, trying to guess the Top 8 is definitely more fun for the gamblers!
