@@ -41,7 +41,7 @@ The purpose of a World Cup is to make compete the bests, and not everyone at the
 |                                         Newshounds |0.00021|
 |                                     Arp2_3_complex |0.00000|
 
-The address this issue to define and select hubs, we did a selection based on an external dataset : Wipedia Pageviews. The selection is based on the most visited Wikipedia page from 2016 to 2024 to avoid any contender that would have been popular just because of a peak at a moment.
+The address this issue to define and select hubs, we did a selection based on an external dataset : Wikipedia Pageviews. The selection is based on the most visited Wikipedia page from 2016 to 2024 to avoid any contender that would have been popular just because of a peak at a moment.
 We crossed all the most visted pages and took the 64 more consistent pages during these 8 years, so we got the "base" of Wikipedia for our hubs. But the fame of a page does not imply that it will be a good hub. Let's have a look to our contenders selection !
 
 <!-- Placeholder: Figure showing the reduction from all pages to qualified hubs -->
@@ -66,6 +66,8 @@ Our contenders come from many different types of categories, but at the end, the
 
 <!-- Placeholder:Analysis in genenral of the selection -->
 ---
+
+In the graph above we introduce a new metric : Volatility. Volatility is a measure of how much a hub's popularity changes year after year. Low volatility means the hub stays consistently important. High volatility means the hub's importance rises and falls with time. Obviously, here, it makes sense that FIFA World Cup is more Volatile as the interest rises every four years. 
 
 ## Some surprising qualifications
 

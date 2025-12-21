@@ -21,7 +21,7 @@ It works in several stages, each increasing in selectivity:
     We start the competion by having 8 groups of 8 hubs. 
     To ensure a fair group stage, groups are **not formed at random**.
 
-    Before the draw, all qualified hubs are ranked according to their **pre-tournament odds**. Based on this ranking, hubs are divided into **seeding bins** (sometimes called *pots*), a system commonly used in real-world tournaments such as the Football World Cup or in Tennis.
+    Before the draw, all qualified hubs are ranked according to their **pre-tournament odds**. Here, volatility will be used to give seeds to our top 64 hubs for the competition : the least volatile (United States) will be seed 1 while the most volatile (FIFA World Cup) will be seed 64. Based on this ranking, hubs are divided into **seeding bins** (sometimes called *pots*), a system commonly used in real-world tournaments such as the Football World Cup or in Tennis.
 
     Each bin contains hubs of similar expected strength.
 
@@ -66,20 +66,20 @@ Instead, each competitor is evaluated using a **composite score** that captures 
   Versatility measures how a hub connects different areas of knowledge.  
   Pages that bridge multiple topics or appear in diverse navigation contexts are considered more versatile.
   This is all based off the categories which you can visualize here with this correlation graph between all of them :
-  {% include_relative _plots/categories_graph.html %}
+{% include_relative _plots/categories_graph.html %}
 
   You can see that some of these categories can be very close, so we curate them based on similarity and end up with a list of categories for each article. For example, here's the category hierarchy of Gottfried Wilhelm Leibniz. 
-  {% include_relative _plots/article_categories.html %}
+{% include_relative _plots/article_categories.html %}
 
-  The Versatility score is then based off how many catefories each hub has, giving more weight to the ones who appear less frequently!
+  The Versatility score is then based off how many categories each hub has, giving more weight to the ones who appear less frequently!
 
 
 - **Effectiveness**  
   Effectiveness reflects whether visiting a page helps players make progress toward their target or slows them down.
   Let's have an insight on this metric, without showing names of course, it would spoil a part of the core ! 
-  {% include_relative _plots/efficiency_metric_introduction.html %}
+{% include_relative _plots/efficiency_metric_introduction.html %}
 
-Each of these metrics highlights a different aspect on how we could define a hub beinf a **good hub**. 
+Each of these metrics highlights a different aspect on how we could define a hub being a **good hub**. 
 
 ### From Metrics to a Match Score
 

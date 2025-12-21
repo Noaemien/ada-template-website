@@ -19,7 +19,6 @@ This is a complex metric constructed using meticulously balanced weights for nor
 - **Popularity**, reflecting how often a hub is encountered and reused by players.
 - **Versatility**, measuring semantic breadth and category coverage.
 - **Efficiency**, capturing if a hub supports or slows down successful navigation.
-- **Global visibility**, derived from external Wikipedia pageview statistics.
 
 Each component is normalized independently prior to aggregation, to ensure that no single metric dominates due to scale effects.
 
@@ -164,6 +163,14 @@ Rather than pointing to a single “best” formula for efficiency, this visuali
     loading="lazy">
   </iframe>
 </div>
+
+---
+
+## All three metrics in a single plot
+
+To look at the correlation between popularity, versatility and efficiency we propose a final 3d plot. This helps show how high up the United States were as a hub and let's us see where other hubs lacked strength. 
+
+{% include_relative _plots/3d_metrics.html %}
 
 ---
 

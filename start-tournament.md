@@ -68,7 +68,7 @@ To reward strong performance in the group stage and preserve competitive balance
 The rules are as follows:
 
 - Each **group winner** is paired against a **repechage winner** in the Round of 16  
-- Group winners are assigned a **seed** based on their pre-tournament odds of winning
+- Group winners are assigned a **seed** based on their pre-tournament odds of winning (lowest volatilty)
 
 This ensures that the winner of the group stage face gets a litttle advantage by normally facing a weaker opponent from the *loser bracket*. In other words, the better a hub performs early on, the more favorable its path becomes but nothing is guaranteed.
 
@@ -86,9 +86,9 @@ It is time ot discover the final table of the tournament !
 The Round of 16 is the first moment where the bracket really starts to take shape.  
 Big favorites like the **United States (1)**, **United Kingdom (2)**, and **China (3)** enter the competition with high expectations, facing lower-seeded opponents that look weaker on paper.
 
-However, not all matches are so clear. Some games are very close in seeding, such as **Turkey (8) vs Adolf Hitler (9)** and **Israel (7) vs Australia (10)**, where a small difference could change everything.
+However, not all matches are so clear. Some games are very close in seeding, such as **Turkey (8) vs Germany (9)** and **Israel (7) vs France (10)**, where a small difference could change everything.
 
-There are also interesting and symbolic matchups. **New York City (4) vs Russia (13)** is strong geopolitical matchup, while **Japan (6) vs Germany (11)** is another shock of cultures.
+There are also interesting and symbolic matchups. **United Kingdom (4) vs Periodic Table (13)** is a interesting matchup between geography and science, while **Japan (6) vs Russia (11)** is another shock of cultures.
 
 This round sets the tone for the tournament: top seeds try to avoid surprises, while lower seeds look for one chance to create an upset.
 
@@ -102,7 +102,7 @@ There are no more second chances.
 
 From here on, every match is a direct duel : win and advance, or lose and go home.
 
-**The Round of 16 and the road to the Granf Final.**  
+**The Round of 16 and the road to the Grand Final.**  
 
 <div class="change-page-button-wrapper">
   <a href="/ada-template-website/knockouts" class="change-page-button">

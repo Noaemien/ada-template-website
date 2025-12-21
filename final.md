@@ -8,7 +8,7 @@ title: The Grand Final
 After weeks of competition, countless matchups, and relentless eliminations, the World Cup of Hubs reaches its final moment.
 
 Two hubs remain:  
-[United States](https://en.wikipedia.org/wiki/United_States) vs [United Kingdom](https://en.wikipedia.org/wiki/United_Kingdom)
+**[United States](https://en.wikipedia.org/wiki/United_States)** vs **[United Kingdom](https://en.wikipedia.org/wiki/United_Kingdom)**
 
 Both have survived the group stage and three knockout rounds. Each followed a different path, faced different opponents, and proved its strength under pressure.
 
@@ -61,9 +61,13 @@ This hub is crowned the **World Cup of Wikipedia Hubs champion**.
 The tournament concludes with a final ranking of the top competitors.
 
 **Top 1 : United States**  
+
 **Top 2 : United Kingdom**  
+
 **Top 4 : South Africa, Japan**
+
 **Top 8 : Israel, London, Germany, New York City**  
+
 ---
 
 ## Looking Back at the Tournament : Which betting strategy was the best ?
@@ -115,7 +119,7 @@ Profit:
 
 - `486.7 $ − 80 $ = 406.7 $`
 
-Note to mention that Adolf Hitler was not even proposed by the bookmakers, showing that the bookmakers could'nt predict the competition well and that the graph analysis alone is not sufficient enough to estimate wikispeedia's players behaviors.
+Note to mention that some hubs that ranked high in the competition were not even proposed by the bookmakers, showing that the bookmakers couldn't predict the competition well and that the graph analysis alone is not sufficient enough to estimate wikispeedia's players behaviors.
 Underdogs that were not proposed to bet on is part of the game (that's one way how bookmakers can make money)
 
 ---
