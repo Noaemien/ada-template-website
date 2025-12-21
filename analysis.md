@@ -176,6 +176,8 @@ To look at the correlation between popularity, versatility and efficiency we pro
 
 **Thank you for following us through our World Cup of Hubs ! We hope you enjoyed it !**
 
+Since the Wikispeedia game database is built from **all** players, the next Edition of “World Cup of Hubs” will be based only on the **best players**. In that setting, we might expect the bookmakers prediction to be more accurate, because top players are more likely to choose **efficient links** rather than links that simply sound familiar or intuitive to them.
+
 <div class="change-page-button-wrapper">
   <a href="/ada-template-website/index" class="change-page-button">
     Back to the menu

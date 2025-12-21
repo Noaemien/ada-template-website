@@ -107,27 +107,27 @@ Profit:
 
 #### Strategy 2 – Perfectly predict the Top 8 hubs
 
-If someone predicted the 8 best hubs (including one article not even offered by the bookmakers):
+If someone predicted the 8 best hubs:
  
-  **United States, Russia, South Africa, United Kingdom, Israel, China, Germany, Adolf Hitler**
+  **United States, Japan, South Africa, United Kingdom, Israel, London, Germany, New York City**
 
 The return from the 7 bettable winners would be:
 
-- `10 × (1.00 + 8.05 + 10.63 + 3.36 + 11.53 + 8.35 + 5.75) = 486.7 $`
+- `10 × (1.00 + 7.44 + 10.63 + 3.36 + 11.53 + 7.61 + 5.75 + 11.08) = 584 $`
 
 Profit:
 
-- `486.7 $ − 80 $ = 406.7 $`
+- `584 $ − 80 $ = 504 $`
 
-Note to mention that some hubs that ranked high in the competition were not even proposed by the bookmakers, showing that the bookmakers couldn't predict the competition well and that the graph analysis alone is not sufficient enough to estimate wikispeedia's players behaviors.
-Underdogs that were not proposed to bet on is part of the game (that's one way how bookmakers can make money)
+Note to mention that some hubs ranked high in the competition (Albert Einstein or Periodic Table were in Top 16) but were not even proposed by the bookmakers. This shows that the bookmakers couldn't predict the competition perfectly and that the graph analysis alone is not sufficient enough to estimate wikispeedia's players behaviors.
+Nonetherless, all Top 8 contenders were predicted as in the Top 64 by the bookmakers showing that their graph analysis was efficient enough. In addition, Underdogs that are not proposed in the betting area is part of the game of betting, bookmakers cannot predict the future and and that's also one way how they make money themselve.
 
 ---
 
 #### Strategy 3 – Use global popularity
 
 Picking the top 8 most popular pages on Wikipedia over the last 10 years.  
-We realize that these are **not** the same as the nodes favored by the Wikipedia link architecture, so the overlap with the bookmaker’s list is limited : Indeed, we need to go up to the 15th most visited page of Wikipedia to find 8 articles that are also porposed by the bookmakers.
+We realize that these are **not** the same as the nodes favored by the Wikipedia link architecture, so the overlap with the bookmaker’s list is limited (see Strategy 2): Indeed, we need to go up to the 15th most visited page of Wikipedia to find 8 articles that are also porposed by the bookmakers.
 
 | Rank | Top article by popularity on the real world wikipedia | Selected in strategy | Result |
 |------|-------------------------------------------------------|----------------------|--------|
@@ -142,7 +142,7 @@ We realize that these are **not** the same as the nodes favored by the Wikipedia
 | 9    | World War I                                           | X                    |        |
 | 10   | Michael Jordan                                        |                      |        |
 | 11   | Winston Churchill                                     |                      |        |
-| 12   | China                                                 | X                    | WIN (8.35) |
+| 12   | China                                                 | X                    |        |
 | 13   | Elvis Presley                                         |                      |        |
 | 14   | Canada                                                | X                    |        |
 | 15   | Australia                                             | X                    |        |
@@ -150,15 +150,13 @@ We realize that these are **not** the same as the nodes favored by the Wikipedia
 
 Total return:
 
-- `10 × (1.00 + 3.36 + 8.35) = 127.10 $`
+- `10 × (1.00 + 3.36) = 43.60 $`
 
 Profit:
 
-- `127.10 $ − 80 $ = 47.1 $`
+- `43.60 $ − 80 $ = -36.4 $`
 
-This strategy outperforms the one directly following the bookmakers’ odds. It shows that using **page popularity** can be more reliable for predicting players’ behavior than relying only on the **graph architecture**.
-
-Since the Wikispeedia game database is built from **all** players, it would be interesting to organize a second “World Cup of Hubs” but this time based only on the **best players**. In that setting, we might expect the bookmakers’ graph-based strategy to perform better, because top players are more likely to choose **efficient links** rather than links that simply sound familiar.
+This strategy performs pretty badly. It shows that using **page popularity** can is not reliable for predicting players’ behavior. Relying only on the **graph architecture** like in Strategy 1, seems to be slightly better.
 
 ---
 

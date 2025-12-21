@@ -324,7 +324,7 @@ function saveSelection() {
 
 ### Now, let's see some betting strategies example
 
-<p>We always assume you have 80\$ and bet 10\$ on each of 8 articles.<p>
+We always assume you have 80\$ and bet 10\$ on each of 8 articles.
 
 #### Strategy 1 : Follow the bookmakers
 
